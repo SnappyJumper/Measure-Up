@@ -6,19 +6,20 @@ document.addEventListener("DOMContentLoaded", function () {
     start.addEventListener("click", function () {
         let workspace = document.getElementById("workspace");
 
+        //over writes the start-button with new html code in the workspace
         workspace.innerHTML = `<div id="calculator">
                 <div class="buttons">
                     <button class="options" id="cups-liquid">
-
+                    Cups Liquid
                     </button>
                     <button class="options" id="cups-solid">
-
+                    Cups Solid
                     </button>
                     <button class="options" id="ounces">
-
+                    Ounces
                     </button>
                     <button class="options" id="fluid-ounces">
-
+                    Fluid Ounces
                     </button>
                 </div>
 
