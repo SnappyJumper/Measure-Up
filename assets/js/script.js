@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (selection === "") {
                         alert("Please Select A Unit To Convert");
                     } else if (selection === "cupsLiquid") {
+                        calculateCupsLiquid(userInput);
                         alert("This will convert cups liquid to ml");
                     } else if (selection === "cupsSolid") {
                         alert("This will convert cups solid to grams");
@@ -164,12 +165,11 @@ function displayFluidOunces() {
     selection = 'fluidOunces';
 }
 
-//function cupLiquidMath() {
+function calculateCupsLiquid(input) {
 
-        //let cupFluid = 236.588;
-        //let output = input * cupFluid;
-        //console.log(`${output}`);
+        let cupFluid = 236.588;
+        let output = input * cupFluid;
+        console.log(`${output}`);
 
-    //}
-    //let submit = document.getElementById("submit");
-   // submit.addEventListener("click", cupLiquidMath());
+    }
+   
