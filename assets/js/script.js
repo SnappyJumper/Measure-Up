@@ -1,5 +1,7 @@
+let selection = "ds";
 //wait for DOM to fully load before running any JS
 document.addEventListener("DOMContentLoaded", function () {
+    
     // asigns start variable to start-button in the html
     let start = document.getElementById("start-button");
     //listens for the start-button to click then runs a function
@@ -27,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <input id="user-input" type="number">
                 </div>
                 <div class="submit-area">
-                    <button class="options" data-type="submit"><span id="conversion">Please select a unit to convert</span></button>
+                    <button class="options" id="submit" data-type="submit"><span id="conversion">Please select a unit to convert</span></button>
                 </div>
                 <div>
                     <p><span id="output"></span></p>
@@ -48,77 +50,116 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>`;
 
         let buttons = document.getElementsByClassName("options");
-        
+
+        //iterates through the buttons adding a click eventListener to each which runs a function in response
         for (let button of buttons) {
-            button.addEventListener("click", function() {
+            button.addEventListener("click", function () {
+                //if submit button is pressed
                 if (this.getAttribute("data-type") === "submit") {
-                    alert("Submit button was pressed");
-                } else if (this.getAttribute("data-type") === "cups-liquid") {
-                    let conversionType = this.getAttribute("data-type");
-                    runConversion(conversionType);
-                }   else if (this.getAttribute("data-type") === "cups-solid") {
-                    let conversionType = this.getAttribute("data-type");
-                    runConversion(conversionType);
-                }   else if (this.getAttribute("data-type") === "ounces") {
-                    let conversionType = this.getAttribute("data-type");
-                    runConversion(conversionType);
-                }   else if (this.getAttribute("data-type") === "fluid-ounces") {
+                    //gets the input from the user through the DOM and assigns its value to a new variable
+                    let userInput = document.getElementById("user-input").value;
+                    userInput = parseFloat(userInput);
+
+                    alert(`Submit button was pressed ${selection}`);
+                }
+                //if Cups Liquid button is pressed
+                else if (this.getAttribute("data-type") === "cups-liquid") {
                     let conversionType = this.getAttribute("data-type");
                     runConversion(conversionType);
                 }
-                
+                //if Cups Solid button is pressed
+                else if (this.getAttribute("data-type") === "cups-solid") {
+                    let conversionType = this.getAttribute("data-type");
+                    runConversion(conversionType);
+                }
+                //if Ounces button is pressed
+                else if (this.getAttribute("data-type") === "ounces") {
+                    let conversionType = this.getAttribute("data-type");
+                    runConversion(conversionType);
+                }
+                //if Fluid Ounces Button is pressed
+                else if (this.getAttribute("data-type") === "fluid-ounces") {
+                    let conversionType = this.getAttribute("data-type");
+                    runConversion(conversionType);
+                }
+
             })
         }
-
+        //runs the default conversion cups-liquid
         runConversion("cups-liquid");
     })
 })
 
+/**
+ * 
+ * 
+ */
 function runConversion(conversionType) {
 
-    let userInput = document.getElementById("user-input").value;
-    //userInput = parseFloat(userInput);
-    
+    //if the user wants to convert Cups Liquid
     if (conversionType === "cups-liquid") {
-        displayCupsLiquid(userInput);
-    } else if (conversionType === "cups-solid") {
-        displayCupsSolid(userInput);
-    } else if (conversionType === "ounces") {
-        displayOunces(userInput);
-    } else if (conversionType === "fluid-ounces") {
-        displayFluidOunces(userInput);
+        displayCupsLiquid();
+    }
+    //if the user wants to convert Cups Solid
+    else if (conversionType === "cups-solid") {
+        displayCupsSolid();
+    }
+    //if the user wants to convert Ounces
+    else if (conversionType === "ounces") {
+        displayOunces();
+    }
+    //if the user wants to convert Fluid Ounces
+    else if (conversionType === "fluid-ounces") {
+        displayFluidOunces();
     }
 
 }
 
-function calculateOutput() {
+function printOutput() {
 
 }
 
 function addHistory() {
 
 }
-
+/**
+ * 
+ */
 function displayCupsLiquid() {
 
-    alert("Cups Liquid Called!");
+    let submitText = document.getElementById("conversion");
+    submitText.innerHTML = "Convert Cups Liquid to Millilitres (ml)";
+    selection = 'cupsLiquid';
 
 }
 
 function displayCupsSolid() {
 
-    alert("Cups Solid Called!");
-
+    let submitText = document.getElementById("conversion");
+    submitText.innerHTML = "Convert Cups Solid to Grams (g)";
+    selection = 'cupsSolid';
 }
 
 function displayOunces() {
 
-    alert("Ounces Called!");
-
+    let submitText = document.getElementById("conversion");
+    submitText.innerHTML = "Convert Ounces to Grams (g)";
+    selection = 'ounces';
 }
 
 function displayFluidOunces() {
 
-    alert("Fluid Ounces Called!");
-
+    let submitText = document.getElementById("conversion");
+    submitText.innerHTML = "Convert Fluid Ounces to Mililitres (ml)";
+    selection = 'fluidOunces';
 }
+
+//function cupLiquidMath() {
+
+        //let cupFluid = 236.588;
+        //let output = input * cupFluid;
+        //console.log(`${output}`);
+
+    //}
+    //let submit = document.getElementById("submit");
+   // submit.addEventListener("click", cupLiquidMath());
