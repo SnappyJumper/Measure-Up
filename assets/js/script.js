@@ -1,7 +1,7 @@
 let selection = "";
 //wait for DOM to fully load before running any JS
 document.addEventListener("DOMContentLoaded", function () {
-    
+
     // asigns start variable to start-button in the html
     let start = document.getElementById("start-button");
     //listens for the start-button to click then runs a function
@@ -56,7 +56,8 @@ document.addEventListener("DOMContentLoaded", function () {
             button.addEventListener("click", function () {
                 //if submit button is pressed
                 if (this.getAttribute("data-type") === "submit") {
-                    //gets the input from the user through the DOM and assigns its value to a new variable
+                    
+                    //gets the input from the user from the DOM and assigns its value to a new variable
                     let userInput = document.getElementById("user-input").value;
                     userInput = parseFloat(userInput);
 
@@ -66,10 +67,13 @@ document.addEventListener("DOMContentLoaded", function () {
                         calculateCupsLiquid(userInput);
                         alert("This will convert cups liquid to ml");
                     } else if (selection === "cupsSolid") {
+                        calculateCupsSolid(userInput);
                         alert("This will convert cups solid to grams");
                     } else if (selection === "ounces") {
+                        calculateOunces(userInput);
                         alert("This will convert ounces to grams");
                     } else if (selection === "fluidOunces") {
+                        calculateFluidOunces(userInput);
                         alert("This will convert Fluid ounces to ml");
                     }
                 }
@@ -167,9 +171,32 @@ function displayFluidOunces() {
 
 function calculateCupsLiquid(input) {
 
-        let cupFluid = 236.588;
-        let output = input * cupFluid;
-        console.log(`${output}`);
+    let cupFluid = 236.588;
+    let output = input * cupFluid;
+    console.log(`${output} millilitres`);
 
-    }
-   
+}
+
+function calculateCupsSolid(input) {
+
+    let cupSolid = 120;
+    let output = input * cupSolid;
+    console.log(`${output} grams`);
+
+}
+
+function calculateOunces(input) {
+
+    let ounce = 28.35;
+    let output = input * ounce;
+    console.log(`${output} grams`);
+
+}
+
+function calculateFluidOunces(input) {
+
+    let fluidOunce = 29.574;
+    let output = input * fluidOunce;
+    console.log(`${output} mililitres`);
+
+}
