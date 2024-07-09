@@ -65,16 +65,12 @@ document.addEventListener("DOMContentLoaded", function () {
                         alert("Please Select A Unit To Convert");
                     } else if (selection === "cupsLiquid") {
                         calculateCupsLiquid(userInput);
-                        alert("This will convert cups liquid to ml");
                     } else if (selection === "cupsSolid") {
                         calculateCupsSolid(userInput);
-                        alert("This will convert cups solid to grams");
                     } else if (selection === "ounces") {
                         calculateOunces(userInput);
-                        alert("This will convert ounces to grams");
                     } else if (selection === "fluidOunces") {
                         calculateFluidOunces(userInput);
-                        alert("This will convert Fluid ounces to ml");
                     }
                 }
                 //if Cups Liquid button is pressed
@@ -130,7 +126,7 @@ function runConversion(conversionType) {
 
 }
 
-function printOutput() {
+function printOutput(answer) {
 
 }
 
@@ -174,6 +170,7 @@ function calculateCupsLiquid(input) {
     let cupFluid = 236.588;
     let output = input * cupFluid;
     console.log(`${output} millilitres`);
+    printOutput(output);
 
 }
 
@@ -182,6 +179,7 @@ function calculateCupsSolid(input) {
     let cupSolid = 120;
     let output = input * cupSolid;
     console.log(`${output} grams`);
+    printOutput(output);
 
 }
 
@@ -190,6 +188,7 @@ function calculateOunces(input) {
     let ounce = 28.35;
     let output = input * ounce;
     console.log(`${output} grams`);
+    printOutput(output);
 
 }
 
@@ -198,5 +197,6 @@ function calculateFluidOunces(input) {
     let fluidOunce = 29.574;
     let output = input * fluidOunce;
     console.log(`${output} mililitres`);
+    printOutput(output);
 
 }
