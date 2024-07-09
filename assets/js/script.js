@@ -1,4 +1,4 @@
-let selection = "ds";
+let selection = "";
 //wait for DOM to fully load before running any JS
 document.addEventListener("DOMContentLoaded", function () {
     
@@ -60,7 +60,17 @@ document.addEventListener("DOMContentLoaded", function () {
                     let userInput = document.getElementById("user-input").value;
                     userInput = parseFloat(userInput);
 
-                    alert(`Submit button was pressed ${selection}`);
+                    if (selection === "") {
+                        alert("Please Select A Unit To Convert");
+                    } else if (selection === "cupsLiquid") {
+                        alert("This will convert cups liquid to ml");
+                    } else if (selection === "cupsSolid") {
+                        alert("This will convert cups solid to grams");
+                    } else if (selection === "ounces") {
+                        alert("This will convert ounces to grams");
+                    } else if (selection === "fluidOunces") {
+                        alert("This will convert Fluid ounces to ml");
+                    }
                 }
                 //if Cups Liquid button is pressed
                 else if (this.getAttribute("data-type") === "cups-liquid") {
