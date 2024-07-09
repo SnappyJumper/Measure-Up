@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     </button>
                 </div>
 
-                <div class="input-measurement">
-                    <input type="number">
+                <div class="input-area">
+                    <input id="user-input" type="number">
                 </div>
                 <div class="submit-area">
                     <button class="options" data-type="submit"><span id="conversion">Please select a unit to convert</span></button>
@@ -55,12 +55,16 @@ document.addEventListener("DOMContentLoaded", function () {
                     alert("Submit button was pressed");
                 } else if (this.getAttribute("data-type") === "cups-liquid") {
                     let conversionType = this.getAttribute("data-type");
+                    runConversion(conversionType);
                 }   else if (this.getAttribute("data-type") === "cups-solid") {
                     let conversionType = this.getAttribute("data-type");
+                    runConversion(conversionType);
                 }   else if (this.getAttribute("data-type") === "ounces") {
                     let conversionType = this.getAttribute("data-type");
+                    runConversion(conversionType);
                 }   else if (this.getAttribute("data-type") === "fluid-ounces") {
                     let conversionType = this.getAttribute("data-type");
+                    runConversion(conversionType);
                 }
                 
             })
@@ -70,7 +74,20 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 })
 
-function runConversion() {
+function runConversion(conversionType) {
+
+    let userInput = document.getElementById("user-input").value;
+    //userInput = parseFloat(userInput);
+    
+    if (conversionType === "cups-liquid") {
+        displayCupsLiquid(userInput);
+    } else if (conversionType === "cups-solid") {
+        displayCupsSolid(userInput);
+    } else if (conversionType === "ounces") {
+        displayOunces(userInput);
+    } else if (conversionType === "fluid-ounces") {
+        displayFluidOunces(userInput);
+    }
 
 }
 
@@ -84,16 +101,24 @@ function addHistory() {
 
 function displayCupsLiquid() {
 
+    alert("Cups Liquid Called!");
+
 }
 
 function displayCupsSolid() {
+
+    alert("Cups Solid Called!");
 
 }
 
 function displayOunces() {
 
+    alert("Ounces Called!");
+
 }
 
 function displayFluidOunces() {
+
+    alert("Fluid Ounces Called!");
 
 }
