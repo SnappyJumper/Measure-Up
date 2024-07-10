@@ -126,7 +126,10 @@ function runConversion(conversionType) {
 
 }
 
-function printOutput(answer) {
+function printOutput(initial, result, imperial, metric) {
+
+    let outputSpan = document.getElementById("output");
+    outputSpan.innerHTML = `${initial} ${imperial} is equal to ${result} ${metric}`;
 
 }
 
@@ -169,8 +172,9 @@ function calculateCupsLiquid(input) {
 
     let cupFluid = 236.588;
     let output = input * cupFluid;
-    console.log(`${output} millilitres`);
-    printOutput(output);
+    let imperial = "Cups (Liquid)";
+    let metric = "Millilitres";
+    printOutput(input, output, imperial, metric);
 
 }
 
@@ -178,8 +182,9 @@ function calculateCupsSolid(input) {
 
     let cupSolid = 120;
     let output = input * cupSolid;
-    console.log(`${output} grams`);
-    printOutput(output);
+    let imperial = "Cups (Solid)";
+    let metric = "Grams";
+    printOutput(input, output, imperial, metric);
 
 }
 
@@ -187,8 +192,9 @@ function calculateOunces(input) {
 
     let ounce = 28.35;
     let output = input * ounce;
-    console.log(`${output} grams`);
-    printOutput(output);
+    let imperial = "Ounces";
+    let metric = "Grams";
+    printOutput(input, output, imperial, metric);
 
 }
 
@@ -196,7 +202,8 @@ function calculateFluidOunces(input) {
 
     let fluidOunce = 29.574;
     let output = input * fluidOunce;
-    console.log(`${output} mililitres`);
-    printOutput(output);
+    let imperial = "Fluid Ounces";
+    let metric = "Millilitres";
+    printOutput(input, output, imperial, metric);
 
 }
