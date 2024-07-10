@@ -6,3 +6,4 @@ It is useful for helping bakers, both at home and professional, transfer recipes
 
 The website is easy to navigate and logs a history so the user can look back over the conversions the carried out.
 
+Visit te deployed site [here](https://snappyjumper.github.io/Measure-Up/).
