@@ -41,11 +41,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 <table id="history-table">
                     <tr>
                         <th>Input</th>
+                        <th>Imperial Unit</th>
                         <th>Output</th>
-                    </tr>
-                    <tr>
-                        <td>None</td>
-                        <td>None</td>
+                        <th>Metric Unit</th>
                     </tr>
                 </table>
             </div>`;
@@ -142,12 +140,18 @@ function addHistory(initial, result, imperial, metric) {
     let newRow = document.createElement("tr");
     let cell1 = document.createElement("td");
     let cell2 = document.createElement("td");
+    let cell3 = document.createElement("td");
+    let cell4 = document.createElement("td");
 
     
     cell1.innerHTML = `${initial}`;
-    cell2.innerHTML = `${result}`;
+    cell2.innerHTML = `${imperial}`;
+    cell3.innerHTML = `${result}`;
+    cell4.innerHTML = `${metric}`;
     newRow.appendChild(cell1);
     newRow.appendChild(cell2);
+    newRow.appendChild(cell3);
+    newRow.appendChild(cell4);
     table.appendChild(newRow);
    
 }
