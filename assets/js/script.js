@@ -1,3 +1,4 @@
+//this variable tells the submit button what function to run based on its value
 let selection = "";
 //wait for DOM to fully load before running any JS
 document.addEventListener("DOMContentLoaded", function () {
@@ -130,11 +131,25 @@ function printOutput(initial, result, imperial, metric) {
 
     let outputSpan = document.getElementById("output");
     outputSpan.innerHTML = `${initial} ${imperial} is equal to ${result} ${metric}`;
-
+    addHistory(initial, result, imperial, metric);
+    
 }
 
-function addHistory() {
+function addHistory(initial, result, imperial, metric) {
 
+    //adds a new row to the HTML table by creating elements, appending them to eachother and assigning them a value
+    let table = document.getElementById("history-table");
+    let newRow = document.createElement("tr");
+    let cell1 = document.createElement("td");
+    let cell2 = document.createElement("td");
+
+    
+    cell1.innerHTML = `${initial}`;
+    cell2.innerHTML = `${result}`;
+    newRow.appendChild(cell1);
+    newRow.appendChild(cell2);
+    table.appendChild(newRow);
+   
 }
 /**
  * 
