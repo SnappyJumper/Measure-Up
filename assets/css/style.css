@@ -55,3 +55,8 @@ h2 {
 #start-button {
     padding: 10px;
 }
+
+.buttons {
+    display:flex;
+    justify-content: space-around;
+}
