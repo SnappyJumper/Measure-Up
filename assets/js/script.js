@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
             button.addEventListener("click", function () {
                 //if submit button is pressed
                 if (this.getAttribute("data-type") === "submit") {
-                    
+
                     //gets the input from the user from the DOM and assigns its value to a new variable
                     let userInput = document.getElementById("user-input").value;
                     userInput = parseFloat(userInput);
@@ -130,7 +130,7 @@ function printOutput(initial, result, imperial, metric) {
     let outputSpan = document.getElementById("output");
     outputSpan.innerHTML = `${initial} ${imperial} is equal to ${result} ${metric}`;
     addHistory(initial, result, imperial, metric);
-    
+
 }
 
 function addHistory(initial, result, imperial, metric) {
@@ -143,8 +143,8 @@ function addHistory(initial, result, imperial, metric) {
     let cell3 = document.createElement("td");
     let cell4 = document.createElement("td");
 
-    
-    cell1.innerHTML = `${initial}`;
+
+    cell1.textContent = `${initial}`;
     cell2.innerHTML = `${imperial}`;
     cell3.innerHTML = `${result}`;
     cell4.innerHTML = `${metric}`;
@@ -153,7 +153,7 @@ function addHistory(initial, result, imperial, metric) {
     newRow.appendChild(cell3);
     newRow.appendChild(cell4);
     table.appendChild(newRow);
-   
+
 }
 /**
  * 
