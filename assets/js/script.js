@@ -37,7 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
             </div>
             <div id="history">
+            <div id="table-heading">    
                 <h2>Your Recent History</h2>
+            </div>
                 <table id="history-table">
                     <tr>
                         <th>Input</th>
@@ -136,7 +138,7 @@ function printOutput(initial, result, imperial, metric) {
 function addHistory(initial, result, imperial, metric) {
 
     //adds a new row to the HTML table by creating elements, appending them to eachother and assigning them a value
-    let table = document.getElementById("history-table");
+    /*let table = document.getElementById("history-table");
     let newRow = document.createElement("tr");
     let cell1 = document.createElement("td");
     let cell2 = document.createElement("td");
@@ -153,6 +155,18 @@ function addHistory(initial, result, imperial, metric) {
     newRow.appendChild(cell3);
     newRow.appendChild(cell4);
     table.appendChild(newRow);
+    */
+
+    let table = document.getElementById("history-table");
+    let row = table.insertRow(1);
+    let cell1 = row.insertCell(0);
+    let cell2 = row.insertCell(1);
+    let cell3 = row.insertCell(2);
+    let cell4 = row.insertCell(3);
+    cell1.textContent = `${initial}`;
+    cell2.innerHTML = `${imperial}`;
+    cell3.innerHTML = `${result}`;
+    cell4.innerHTML = `${metric}`;
 
 }
 /**
