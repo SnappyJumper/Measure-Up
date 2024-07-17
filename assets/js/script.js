@@ -137,32 +137,16 @@ function printOutput(initial, result, imperial, metric) {
 
 function addHistory(initial, result, imperial, metric) {
 
-    //adds a new row to the HTML table by creating elements, appending them to eachother and assigning them a value
-    /*let table = document.getElementById("history-table");
-    let newRow = document.createElement("tr");
-    let cell1 = document.createElement("td");
-    let cell2 = document.createElement("td");
-    let cell3 = document.createElement("td");
-    let cell4 = document.createElement("td");
-
-
-    cell1.textContent = `${initial}`;
-    cell2.innerHTML = `${imperial}`;
-    cell3.innerHTML = `${result}`;
-    cell4.innerHTML = `${metric}`;
-    newRow.appendChild(cell1);
-    newRow.appendChild(cell2);
-    newRow.appendChild(cell3);
-    newRow.appendChild(cell4);
-    table.appendChild(newRow);
-    */
-
+    //assigns history table to the variable table
     let table = document.getElementById("history-table");
+    //creates a row and adds it to the table below the first row
     let row = table.insertRow(1);
+    //creates cells and assigns their position on the row
     let cell1 = row.insertCell(0);
     let cell2 = row.insertCell(1);
     let cell3 = row.insertCell(2);
     let cell4 = row.insertCell(3);
+    //fills in the content of the cells
     cell1.textContent = `${initial}`;
     cell2.innerHTML = `${imperial}`;
     cell3.innerHTML = `${result}`;
@@ -204,7 +188,7 @@ function displayFluidOunces() {
 function calculateCupsLiquid(input) {
 
     let cupFluid = 236.588;
-    let output = input * cupFluid;
+    let output = (input * cupFluid).toFixed(2);
     let imperial = "Cups (Liquid)";
     let metric = "Millilitres";
     printOutput(input, output, imperial, metric);
@@ -214,7 +198,7 @@ function calculateCupsLiquid(input) {
 function calculateCupsSolid(input) {
 
     let cupSolid = 120;
-    let output = input * cupSolid;
+    let output = (input * cupSolid).toFixed(2);
     let imperial = "Cups (Solid)";
     let metric = "Grams";
     printOutput(input, output, imperial, metric);
@@ -224,7 +208,7 @@ function calculateCupsSolid(input) {
 function calculateOunces(input) {
 
     let ounce = 28.35;
-    let output = input * ounce;
+    let output = (input * ounce).toFixed(2);
     let imperial = "Ounces";
     let metric = "Grams";
     printOutput(input, output, imperial, metric);
@@ -234,7 +218,7 @@ function calculateOunces(input) {
 function calculateFluidOunces(input) {
 
     let fluidOunce = 29.574;
-    let output = input * fluidOunce;
+    let output = (input * fluidOunce).toFixed(2);
     let imperial = "Fluid Ounces";
     let metric = "Millilitres";
     printOutput(input, output, imperial, metric);
