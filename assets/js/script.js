@@ -7,9 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
     let start = document.getElementById("start-button");
     //listens for the start-button to click then runs a function
     start.addEventListener("click", function () {
+        //assigns the workspace div to the variable workspace
         let workspace = document.getElementById("workspace");
 
-        //over writes the start-button with new html code in the workspace
+        //over writes the workspace with new html code
         workspace.innerHTML = `<div id="calculator">
                 <div class="buttons">
                     <button class="options" data-type="cups-liquid" id="cups-liquid">
@@ -32,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="submit-area">
                     <button class="options" id="submit" data-type="submit"><span id="conversion">Please select a unit to convert</span></button>
                 </div>
-                <div>
+                <div id="output-div">
                     <p><span id="output"></span></p>
                 </div>
             </div>
@@ -60,17 +61,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     //gets the input from the user from the DOM and assigns its value to a new variable
                     let userInput = document.getElementById("user-input").value;
+                    // ensures the variable is a float
                     userInput = parseFloat(userInput);
-
+                    // if selection variable equals ""
                     if (selection === "") {
+                        //prints alert
                         alert("Please Select A Unit To Convert");
                     } else if (selection === "cupsLiquid") {
+                        // calls a function and passes it userInput
                         calculateCupsLiquid(userInput);
                     } else if (selection === "cupsSolid") {
+                        // calls another function and passes it userInput
                         calculateCupsSolid(userInput);
                     } else if (selection === "ounces") {
+                        // calls another function and passes it userInput
                         calculateOunces(userInput);
                     } else if (selection === "fluidOunces") {
+                        // calls another function and passes it userInput
                         calculateFluidOunces(userInput);
                     }
                 }
@@ -103,8 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 /**
- * 
- * 
+ * determines which type of conversion you wish to perform and calls its relevant function
  */
 function runConversion(conversionType) {
 
@@ -126,15 +132,23 @@ function runConversion(conversionType) {
     }
 
 }
-
+/**
+ * prints the output of the conversion to a span with ID output on the index page
+ */
 function printOutput(initial, result, imperial, metric) {
 
+    // assigns the span to the variable outputSpan
     let outputSpan = document.getElementById("output");
+    // changes the inner html of the span to the template litteral
     outputSpan.innerHTML = `${initial} ${imperial} is equal to ${result} ${metric}`;
+    // calls the addHistory function passing it four parameters
     addHistory(initial, result, imperial, metric);
 
 }
 
+/**
+ * Prints the history of conversons to a table on the index page
+ */
 function addHistory(initial, result, imperial, metric) {
 
     //assigns history table to the variable table
@@ -153,8 +167,9 @@ function addHistory(initial, result, imperial, metric) {
     cell4.innerHTML = `${metric}`;
 
 }
+
 /**
- * 
+ * displays interface for cups liquid conversion
  */
 function displayCupsLiquid() {
 
@@ -164,6 +179,9 @@ function displayCupsLiquid() {
 
 }
 
+/**
+ * displays interface for cups solid conversion
+ */
 function displayCupsSolid() {
 
     let submitText = document.getElementById("conversion");
@@ -171,6 +189,9 @@ function displayCupsSolid() {
     selection = 'cupsSolid';
 }
 
+/**
+ * displays interface for ounces conversion
+ */
 function displayOunces() {
 
     let submitText = document.getElementById("conversion");
@@ -178,6 +199,9 @@ function displayOunces() {
     selection = 'ounces';
 }
 
+/**
+ * displays interface for fluid ounces conversion
+ */
 function displayFluidOunces() {
 
     let submitText = document.getElementById("conversion");
@@ -185,6 +209,9 @@ function displayFluidOunces() {
     selection = 'fluidOunces';
 }
 
+/**
+ * converts cups liquid to ml
+ */
 function calculateCupsLiquid(input) {
 
     let cupFluid = 236.588;
@@ -195,6 +222,9 @@ function calculateCupsLiquid(input) {
 
 }
 
+/**
+ * converts cups solid to g
+ */
 function calculateCupsSolid(input) {
 
     let cupSolid = 120;
@@ -205,6 +235,9 @@ function calculateCupsSolid(input) {
 
 }
 
+/**
+ * converts ounces to g
+ */
 function calculateOunces(input) {
 
     let ounce = 28.35;
@@ -215,6 +248,9 @@ function calculateOunces(input) {
 
 }
 
+/**
+ * converts fluid ounces to ml
+ */
 function calculateFluidOunces(input) {
 
     let fluidOunce = 29.574;
