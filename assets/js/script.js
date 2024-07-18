@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </table>
             </div>`;
 
-        //adding the info accordion    
+        //the info accordion    
         // fetches the element by its class name accordion and assigns it to acc
         let acc = document.getElementsByClassName("accordion");
         // this returns an array so we're looking to use the first iteration and assign an event listener to it with a click responce
@@ -67,10 +67,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
             //Toggles between hiding and showing the active panel
             let panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
               } else {
-                panel.style.display = "block";
+                panel.style.maxHeight = panel.scrollHeight + "px";
               }
         });
         let buttons = document.getElementsByClassName("options");
