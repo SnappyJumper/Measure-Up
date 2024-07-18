@@ -11,7 +11,13 @@ document.addEventListener("DOMContentLoaded", function () {
         let workspace = document.getElementById("workspace");
 
         //over writes the workspace with new html code
-        workspace.innerHTML = `<div id="calculator">
+        workspace.innerHTML = `
+        <button class="accordion">Ehh... how do I use this?</button>
+        <div class="panel">
+            <p>To get started simply chose what unit you're starting with below, input the measurement in the space provided and press the convert button to see your result!</p>
+        </div>
+
+        <div id="calculator">
                 <div class="buttons">
                     <button class="options" data-type="cups-liquid" id="cups-liquid">
                     Cups Liquid
@@ -51,6 +57,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 </table>
             </div>`;
 
+        //adding the info accordion    
+        // fetches the element by its class name accordion and assigns it to acc
+        let acc = document.getElementsByClassName("accordion");
+        // this returns an array so we're looking to use the first iteration and assign an event listener to it with a click responce
+        acc[0].addEventListener("click", function() {
+            //Toggles between adding and removing the "active class to highlight the button"
+            this.classList.toggle("active");
+
+            //Toggles between hiding and showing the active panel
+            let panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+              } else {
+                panel.style.display = "block";
+              }
+        });
         let buttons = document.getElementsByClassName("options");
 
         //iterates through the buttons adding a click eventListener to each which runs a function in response
@@ -116,18 +138,22 @@ function runConversion(conversionType) {
 
     //if the user wants to convert Cups Liquid
     if (conversionType === "cups-liquid") {
+        //calls a function
         displayCupsLiquid();
     }
     //if the user wants to convert Cups Solid
     else if (conversionType === "cups-solid") {
+        //calls a function
         displayCupsSolid();
     }
     //if the user wants to convert Ounces
     else if (conversionType === "ounces") {
+        //calls a function
         displayOunces();
     }
     //if the user wants to convert Fluid Ounces
     else if (conversionType === "fluid-ounces") {
+        //calls a function
         displayFluidOunces();
     }
 
@@ -173,8 +199,11 @@ function addHistory(initial, result, imperial, metric) {
  */
 function displayCupsLiquid() {
 
+    //gets the text within the submit button and assigns it to a variable
     let submitText = document.getElementById("conversion");
+    //assigns new text to the submit button
     submitText.innerHTML = "Convert Cups Liquid to Millilitres (ml)";
+    //changes the selection variable 
     selection = 'cupsLiquid';
 
 }
@@ -184,8 +213,11 @@ function displayCupsLiquid() {
  */
 function displayCupsSolid() {
 
+    //gets the text within the submit button and assigns it to a variable
     let submitText = document.getElementById("conversion");
+    //assigns new text to the submit button
     submitText.innerHTML = "Convert Cups Solid to Grams (g)";
+    //changes the selection variable
     selection = 'cupsSolid';
 }
 
@@ -194,8 +226,11 @@ function displayCupsSolid() {
  */
 function displayOunces() {
 
+
     let submitText = document.getElementById("conversion");
+    //assigns new text to the submit button
     submitText.innerHTML = "Convert Ounces to Grams (g)";
+    //changes the selection variable
     selection = 'ounces';
 }
 
