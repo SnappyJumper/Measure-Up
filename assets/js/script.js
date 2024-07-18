@@ -19,16 +19,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
         <div id="calculator">
                 <div class="buttons">
-                    <button class="options" data-type="cups-liquid" id="cups-liquid">
+                    <button class="options button-29" role="button" data-type="cups-liquid" id="cups-liquid">
                     Cups Liquid
                     </button>
-                    <button class="options" data-type="cups-solid" id="cups-solid">
+                    <button class="options button-29" role="button" data-type="cups-solid" id="cups-solid">
                     Cups Solid
                     </button>
-                    <button class="options" data-type="ounces" id="ounces">
+                    <button class="options button-29" role="button" data-type="ounces" id="ounces">
                     Ounces
                     </button>
-                    <button class="options" data-type="fluid-ounces" id="fluid-ounces">
+                    <button class="options button-29" role="button" data-type="fluid-ounces" id="fluid-ounces">
                     Fluid Ounces
                     </button>
                 </div>
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <input id="user-input" type="number">
                 </div>
                 <div class="submit-area">
-                    <button class="options" id="submit" data-type="submit"><span id="conversion">Please select a unit to convert</span></button>
+                    <button class="options button-29" id="submit" data-type="submit"><span id="conversion">Please select a unit to convert</span></button>
                 </div>
                 <div id="output-div">
                     <p><span id="output"></span></p>
