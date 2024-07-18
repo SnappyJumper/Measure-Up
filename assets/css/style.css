@@ -8,6 +8,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 /*General styles*/
@@ -87,6 +88,7 @@ h2 {
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
+    text-align: center;
     padding: 0 18px;
     background-color: white;
     max-height: 0;
@@ -108,6 +110,11 @@ h2 {
 .active:after {
     content: "\2796";
     /* Unicode character for "minus" sign (-) */
+}
+
+#calculator {
+    background-color: red;
+    margin: 0 5px;
 }
 
 /*The Output Table*/
