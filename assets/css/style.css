@@ -3,18 +3,21 @@
 /*import for Google Font Maname*/
 @import url('https://fonts.googleapis.com/css2?family=Maname&family=Poppins:wght@500&display=swap');
 
+/*Asterix wildcard selector to overide the default browser styles*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+/*General styles*/
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
 }
 
+/*Heading styles*/
 h1 {
     font-family: "Maname", serif;
     font-weight: 400;
@@ -22,12 +25,14 @@ h1 {
     text-align: center;
 }
 
+/*Subheading Styles*/
 h2 {
     font-family: "Maname", serif;
     font-weight: 400;
     font-style: normal;
 }
 
+/*The Title Div */
 #title {
     background-color: aquamarine;
     height: 50px;
@@ -35,16 +40,19 @@ h2 {
 
 }
 
+/*Div containing the Welcome Paragraph*/
 #welcome-page {
     background-color: pink;
     border: 1px, solid, #000000;
     padding: 10px;
 }
 
+/*The Welcome Paragraph*/
 #welcome-page p {
     text-align: center;
 }
 
+/*Div containing the Start Button*/
 #start-container {
     height: 100px;
     padding: 20px;
@@ -52,54 +60,12 @@ h2 {
     justify-content: center;
 }
 
+/*The Start Button*/
 #start-button {
     padding: 10px;
 }
 
-#table-heading {
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-#history-table {
-    width: 100%;
-    border: 1px, solid, #000000;
-}
-
-#submit {
-    width: fit-content;
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-.buttons {
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.options {
-    height: 40px;
-    width: 70px;
-}
-
-.input-area {
-    height: 50px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-}
-
-.submit-area {
-    height: 70px;
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
-}
-
+/* The Instructions Accordion Tab*/
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: #eee;
@@ -128,6 +94,7 @@ h2 {
     transition: max-height 0.2s ease-out;
 }
 
+/*The + symbol when the accordion is closed*/
 .accordion:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
@@ -136,6 +103,62 @@ h2 {
     margin-left: 5px;
   }
   
+  /*The -symbol when the accordion is open */
   .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
   }
+
+/*The Output Table*/  
+/*Div containing the Table Subheading*/
+#table-heading {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+/*The History Table*/
+#history-table {
+    width: 100%;
+    border: 1px, solid, #000000;
+}
+
+
+
+/*The Submit Button*/
+#submit {
+    width: fit-content;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/*The div containing the options buttons*/
+.buttons {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*The Unit buttons and the submit button*/
+.options {
+    height: 40px;
+    width: 70px;
+}
+
+/*Div containing the input box*/
+.input-area {
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+/*Div containing the Submit button*/
+.submit-area {
+    height: 70px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
