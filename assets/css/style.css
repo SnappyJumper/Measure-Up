@@ -17,6 +17,15 @@ body {
     font-weight: 500;
     font-style: normal;
 }
+ header {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 3px #000000;
+    background-color: aquamarine;
+    height: 50px;
+    padding: 20px, 0, 20px;
+ }
 
 /*Heading styles*/
 h1 {
@@ -33,12 +42,13 @@ h2 {
     font-style: normal;
 }
 
-/*The Title Div */
-#title {
-    background-color: aquamarine;
-    height: 50px;
-    padding: 20px, 0, 20px;
 
+
+/*The Scale Image*/
+#hero-img {
+    width: 100%;
+    height: 500px;
+    position: relative;
 }
 
 /*Div containing the Welcome Paragraph*/
