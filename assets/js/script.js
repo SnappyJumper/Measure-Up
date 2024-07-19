@@ -46,11 +46,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p><span id="output"></span></p>
             </div>
             <div id="history">
-                <div id="table-heading">    
+                <div id="table-header">    
                     <h2>Your Recent History</h2>
                 </div>
                 <div>
-                    <table id="history-table">
+                    <table id="history-table">  
                         <tr>
                             <th>Input</th>
                             <th>Imperial Unit</th>
@@ -89,22 +89,27 @@ document.addEventListener("DOMContentLoaded", function () {
                     let userInput = document.getElementById("user-input").value;
                     // ensures the variable is a float
                     userInput = parseFloat(userInput);
-                    // if selection variable equals ""
-                    if (selection === "") {
-                        //prints alert
-                        alert("Please Select A Unit To Convert");
-                    } else if (selection === "cupsLiquid") {
-                        // calls a function and passes it userInput
-                        calculateCupsLiquid(userInput);
-                    } else if (selection === "cupsSolid") {
-                        // calls another function and passes it userInput
-                        calculateCupsSolid(userInput);
-                    } else if (selection === "ounces") {
-                        // calls another function and passes it userInput
-                        calculateOunces(userInput);
-                    } else if (selection === "fluidOunces") {
-                        // calls another function and passes it userInput
-                        calculateFluidOunces(userInput);
+
+                    if (isNaN(userInput)) {
+                        alert("Please input a value");
+                    } else {
+                        // if selection variable equals ""
+                        if (selection === "") {
+                            //prints alert
+                            alert("Please Select A Unit To Convert");
+                        } else if (selection === "cupsLiquid") {
+                            // calls a function and passes it userInput
+                            calculateCupsLiquid(userInput);
+                        } else if (selection === "cupsSolid") {
+                            // calls another function and passes it userInput
+                            calculateCupsSolid(userInput);
+                        } else if (selection === "ounces") {
+                            // calls another function and passes it userInput
+                            calculateOunces(userInput);
+                        } else if (selection === "fluidOunces") {
+                            // calls another function and passes it userInput
+                            calculateFluidOunces(userInput);
+                        }
                     }
                 }
                 //if Cups Liquid button is pressed
@@ -266,11 +271,15 @@ function calculateCupsLiquid(input) {
  */
 function calculateCupsSolid(input) {
 
+
     let cupSolid = 120;
     let output = (input * cupSolid).toFixed(2);
     let imperial = "Cups (Solid)";
     let metric = "Grams";
     printOutput(input, output, imperial, metric);
+
+
+
 
 }
 

@@ -249,17 +249,22 @@ from https://getcssscan.com/css-buttons-examples*/
 
 /*The Output Table*/
 /*Div containing the Table Subheading*/
-#table-heading {
+#table-header {
     height: fit-content;
     display: flex;
     justify-content: center;
     padding: 10px;
+
 }
 
 /*The History Table*/
 #history-table {
     width: 100%;
-    border: 1px, solid, #000000;
+    border: 1px solid #000000;
+}
+
+th {
+    border-bottom: 2px solid #000000;
 }
 
 #history-table td {
