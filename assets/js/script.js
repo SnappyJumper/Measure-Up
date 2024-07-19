@@ -40,31 +40,32 @@ document.addEventListener("DOMContentLoaded", function () {
                     <button class="options button-29" id="submit" data-type="submit"><span id="conversion">Please select a unit to convert</span></button>
                 </div>
                
-            </div>
-
-             <div id="output-div">
+        </div>
+        <div>
+            <div id="output-div">
                     <p><span id="output"></span></p>
-                </div>
-
-            <div id="history">
-            <div id="table-heading">    
-                <h2>Your Recent History</h2>
             </div>
-                <table id="history-table">
-                    <tr>
-                        <th>Input</th>
-                        <th>Imperial Unit</th>
-                        <th>Output</th>
-                        <th>Metric Unit</th>
-                    </tr>
-                </table>
-            </div>`;
-
+            <div id="history">
+                <div id="table-heading">    
+                    <h2>Your Recent History</h2>
+                </div>
+                <div>
+                    <table id="history-table">
+                        <tr>
+                            <th>Input</th>
+                            <th>Imperial Unit</th>
+                            <th>Output</th>
+                            <th>Metric Unit</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>`;
         //the info accordion    
         // fetches the element by its class name accordion and assigns it to acc
         let acc = document.getElementsByClassName("accordion");
         // this returns an array so we're looking to use the first iteration and assign an event listener to it with a click responce
-        acc[0].addEventListener("click", function() {
+        acc[0].addEventListener("click", function () {
             //Toggles between adding and removing the "active class to highlight the button"
             this.classList.toggle("active");
 
@@ -72,9 +73,9 @@ document.addEventListener("DOMContentLoaded", function () {
             let panel = this.nextElementSibling;
             if (panel.style.maxHeight) {
                 panel.style.maxHeight = null;
-              } else {
+            } else {
                 panel.style.maxHeight = panel.scrollHeight + "px";
-              }
+            }
         });
         let buttons = document.getElementsByClassName("options");
 

@@ -23,7 +23,7 @@ header {
     z-index: 99;
     width: 100%;
     box-shadow: 0 3px #606060;
-    background-color: #213333;
+    background-color: #4a5123;
     height: 50px;
     padding: 20px, 0, 20px;
     color: #FFFFFF;
@@ -136,26 +136,13 @@ h2 {
     /* Unicode character for "minus" sign (-) */
 }
 
+/*Div Containing the conversion tool*/
 #calculator {
-    background-color: rgb(213, 42, 42);
     margin: 0 5px;
     height: 300px;
 }
 
-/*The Output Table*/
-/*Div containing the Table Subheading*/
-#table-heading {
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
 
-/*The History Table*/
-#history-table {
-    width: 100%;
-    border: 1px, solid, #000000;
-}
 
 /*The Submit Button*/
 #submit {
@@ -181,7 +168,7 @@ from https://getcssscan.com/css-buttons-examples*/
     width: 150px;
     align-items: center;
     appearance: none;
-    background-image: radial-gradient(100% 100% at 100% 0, #ff5a5a 0, #ffbb54 100%);
+    background-image: radial-gradient(100% 100% at 100% 0, #9a351e 0, #dd2d2d 100%);
     border: 0;
     border-radius: 6px;
     box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
@@ -210,16 +197,16 @@ from https://getcssscan.com/css-buttons-examples*/
 }
 
 .button-29:focus {
-    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    box-shadow: #9f7509 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #9f7509 0 -3px 0 inset;
 }
 
 .button-29:hover {
-    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #9f7509 0 -3px 0 inset;
     transform: translateY(-2px);
 }
 
 .button-29:active {
-    box-shadow: #3c4fe0 0 3px 7px inset;
+    box-shadow: #9f7509 0 3px 7px inset;
     transform: translateY(2px);
 }
 
@@ -260,10 +247,29 @@ from https://getcssscan.com/css-buttons-examples*/
     justify-content: center;
 }
 
+/*The Output Table*/
+/*Div containing the Table Subheading*/
+#table-heading {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+/*The History Table*/
+#history-table {
+    width: 100%;
+    border: 1px, solid, #000000;
+}
+
+#history-table td {
+    text-align: center;
+}
+
 /*Footer*/
 /*Footer box*/
 footer {
-    background-color: #213333;
+    background-color: #4a5123;
 }
 
 
