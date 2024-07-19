@@ -29,6 +29,11 @@ header {
     color: #FFFFFF;
 }
 
+header a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 /*Heading styles*/
 h1 {
     font-family: "Maname", serif;
@@ -226,6 +231,7 @@ from https://getcssscan.com/css-buttons-examples*/
     padding-top: 10px;
 }
 
+/* Algolia from https://copy-paste-css.com/form-input-text*/
 #user-input {
     position: relative;
     cursor: text;
@@ -250,7 +256,6 @@ from https://getcssscan.com/css-buttons-examples*/
 
 /*Div containing the Submit button*/
 .submit-area {
-    
     display: flex;
     justify-content: center;
 }
@@ -269,7 +274,6 @@ footer {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    border-bottom: 1px solid #FFFFFF;
     margin: 0 10%;
 
 }
