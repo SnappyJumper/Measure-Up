@@ -55,7 +55,7 @@ h2 {
 
 /*Div containing the Start Button*/
 #start-container {
-    height: 100px;
+    
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -63,10 +63,12 @@ h2 {
 
 /*The Start Button*/
 #start-button {
-    padding: 10px;
+   padding: 10px;
+   width:fit-content;
 }
 
 /* The Instructions Accordion Tab*/
+/*Taken from W3Schools https://www.w3schools.com/howto/howto_js_accordion.asp*/
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: #eee;
@@ -113,7 +115,7 @@ h2 {
 }
 
 #calculator {
-    background-color: red;
+    background-color: rgb(193, 183, 183);
     margin: 0 5px;
 }
 
@@ -150,7 +152,7 @@ h2 {
     align-items: center;
 }
 
-/* Styling for the options buttons and submit button 
+/* Styling for the options buttons, start and submit button 
 from https://getcssscan.com/css-buttons-examples*/
 .button-29 {
     width: 150px;
@@ -215,5 +217,33 @@ from https://getcssscan.com/css-buttons-examples*/
     justify-content: center;
 }
 
+/*Footer*/
+/*Footer box*/
+footer {
+    background-color: #028A0F;
+}
 
+
+/*Box contains all the social links*/
+#social-networks {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    border-bottom: 1px solid #FFFFFF;
+    margin: 0 10%;
+
+}
+
+/*Social Icons*/
+.social {
+    color: #FFFFFF;
+    font-size: 200%;
+
+}
+
+.social:hover {
+    color: #960018;
+}
 
