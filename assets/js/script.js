@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
         workspace.innerHTML = `
         <button class="accordion">Ehh... how do I use this?</button>
         <div class="panel">
-            <p>To get started simply chose what unit you're starting with below, input the measurement in the space provided and press the convert button to see your result!</p>
+            <p>To get started simply choose what unit you're starting with below, input the measurement in the space provided and press the convert button to see your result!</p>
         </div>
 
         <div id="calculator">
@@ -89,7 +89,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     let userInput = document.getElementById("user-input").value;
                     // ensures the variable is a float
                     userInput = parseFloat(userInput);
-
+                    
+                    //checks to see if userInput is a number and prints alert if the input is empty
                     if (isNaN(userInput)) {
                         alert("Please input a value");
                     } else {
@@ -235,7 +236,7 @@ function displayCupsSolid() {
  */
 function displayOunces() {
 
-
+    //gets the text within the submit button and assigns it to a variable
     let submitText = document.getElementById("conversion");
     //assigns new text to the submit button
     submitText.innerHTML = "Convert Ounces to Grams (g)";
@@ -247,9 +248,11 @@ function displayOunces() {
  * displays interface for fluid ounces conversion
  */
 function displayFluidOunces() {
-
+    //gets the text within the submit button and assigns it to a variable
     let submitText = document.getElementById("conversion");
+    //assigns new text to the submit button
     submitText.innerHTML = "Convert Fluid Ounces to Mililitres (ml)";
+    //changes the selection variable
     selection = 'fluidOunces';
 }
 
@@ -258,10 +261,15 @@ function displayFluidOunces() {
  */
 function calculateCupsLiquid(input) {
 
+    //number to convert input with
     let cupFluid = 236.588;
+    //sets output to the result of the conversion
     let output = (input * cupFluid).toFixed(2);
+    //for displaying the imperial unit
     let imperial = "Cups (Liquid)";
+    //for displaying the metric unit
     let metric = "Millilitres";
+    //calls the func printOutput and passes it some parameters
     printOutput(input, output, imperial, metric);
 
 }
@@ -271,11 +279,15 @@ function calculateCupsLiquid(input) {
  */
 function calculateCupsSolid(input) {
 
-
+    //number to convert input with
     let cupSolid = 120;
+    //sets output to the result of the conversion
     let output = (input * cupSolid).toFixed(2);
+    //for displaying the imperial unit
     let imperial = "Cups (Solid)";
+    //for displaying the metric unit
     let metric = "Grams";
+    //calls the func printOutput and passes it some parameters
     printOutput(input, output, imperial, metric);
 
 
@@ -288,10 +300,15 @@ function calculateCupsSolid(input) {
  */
 function calculateOunces(input) {
 
+    //number to convert input with
     let ounce = 28.35;
+    //sets output to the result of the conversion
     let output = (input * ounce).toFixed(2);
+    //for displaying the imperial unit
     let imperial = "Ounces";
+    //for displaying the metric unit
     let metric = "Grams";
+    //calls the func printOutput and passes it some parameters
     printOutput(input, output, imperial, metric);
 
 }
@@ -301,10 +318,15 @@ function calculateOunces(input) {
  */
 function calculateFluidOunces(input) {
 
+    //number to convert input with
     let fluidOunce = 29.574;
+    //sets output to the result of the conversion
     let output = (input * fluidOunce).toFixed(2);
+    //for displaying the imperial unit
     let imperial = "Fluid Ounces";
+    //for displaying the metric unit
     let metric = "Millilitres";
+    //calls the func printOutput and passes it some parameters
     printOutput(input, output, imperial, metric);
 
 }
