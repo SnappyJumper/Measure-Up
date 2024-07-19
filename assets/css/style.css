@@ -21,10 +21,11 @@ body {
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 3px #000000;
-    background-color: aquamarine;
+    box-shadow: 0 3px #606060;
+    background-color: #213333;
     height: 50px;
     padding: 20px, 0, 20px;
+    color: #FFFFFF;
  }
 
 /*Heading styles*/
@@ -49,6 +50,7 @@ h2 {
     width: 100%;
     height: 500px;
     position: relative;
+    margin-top: 53px;
 }
 
 /*Div containing the Welcome Paragraph*/
@@ -151,6 +153,7 @@ h2 {
     width: fit-content;
     padding-right: 10px;
     padding-left: 10px;
+    font-size: 10px;
 }
 
 /*The div containing the options buttons*/
