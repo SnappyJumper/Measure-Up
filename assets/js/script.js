@@ -39,10 +39,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="submit-area">
                     <button class="options button-29" id="submit" data-type="submit"><span id="conversion">Please select a unit to convert</span></button>
                 </div>
-                <div id="output-div">
+               
+            </div>
+
+             <div id="output-div">
                     <p><span id="output"></span></p>
                 </div>
-            </div>
+
             <div id="history">
             <div id="table-heading">    
                 <h2>Your Recent History</h2>

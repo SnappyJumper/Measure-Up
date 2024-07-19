@@ -8,7 +8,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+
 }
 
 /*General styles*/
@@ -17,7 +17,8 @@ body {
     font-weight: 500;
     font-style: normal;
 }
- header {
+
+header {
     position: fixed;
     z-index: 99;
     width: 100%;
@@ -26,7 +27,7 @@ body {
     height: 50px;
     padding: 20px, 0, 20px;
     color: #FFFFFF;
- }
+}
 
 /*Heading styles*/
 h1 {
@@ -43,7 +44,10 @@ h2 {
     font-style: normal;
 }
 
-
+/*Hides the heading so that it remains for search engines but not visible*/
+.hidden-heading {
+    display: none;
+}
 
 /*The Scale Image*/
 #hero-img {
@@ -67,7 +71,7 @@ h2 {
 
 /*Div containing the Start Button*/
 #start-container {
-    
+
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -75,8 +79,8 @@ h2 {
 
 /*The Start Button*/
 #start-button {
-   padding: 10px;
-   width:fit-content;
+    padding: 10px;
+    width: fit-content;
 }
 
 /* The Instructions Accordion Tab*/
@@ -92,6 +96,7 @@ h2 {
     border: none;
     outline: none;
     transition: 0.4s;
+    margin-top: 53px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
@@ -127,8 +132,9 @@ h2 {
 }
 
 #calculator {
-    background-color: rgb(193, 183, 183);
+    background-color: rgb(213, 42, 42);
     margin: 0 5px;
+    height: 300px;
 }
 
 /*The Output Table*/
@@ -146,14 +152,13 @@ h2 {
     border: 1px, solid, #000000;
 }
 
-
-
 /*The Submit Button*/
 #submit {
     width: fit-content;
     padding-right: 10px;
     padding-left: 10px;
     font-size: 10px;
+    margin: 20px 20px;
 }
 
 /*The div containing the options buttons*/
@@ -171,7 +176,7 @@ from https://getcssscan.com/css-buttons-examples*/
     width: 150px;
     align-items: center;
     appearance: none;
-    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    background-image: radial-gradient(100% 100% at 100% 0, #ff5a5a 0, #ffbb54 100%);
     border: 0;
     border-radius: 6px;
     box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
@@ -216,16 +221,36 @@ from https://getcssscan.com/css-buttons-examples*/
 
 /*Div containing the input box*/
 .input-area {
-    height: 50px;
-    padding: 10px;
     display: flex;
     justify-content: center;
+    padding-top: 10px;
+}
+
+#user-input {
+    position: relative;
+    cursor: text;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 16px;
+    height: 48px;
+    background-color: #fff;
+    border: 1px solid #d6d6e7;
+    border-radius: 3px;
+    color: rgb(35, 38, 59);
+    box-shadow: inset 0 1px 4px 0 rgb(119 122 175 / 30%);
+    overflow: hidden;
+    transition: all 100ms ease-in-out;
+    text-align: center;
+}
+
+#user-input:focus {
+    border-color: #3c4fe0;
+    box-shadow: 0 1px 0 0 rgb(35 38 59 / 5%);
 }
 
 /*Div containing the Submit button*/
 .submit-area {
-    height: 70px;
-    padding: 10px 0;
+    
     display: flex;
     justify-content: center;
 }
@@ -233,7 +258,7 @@ from https://getcssscan.com/css-buttons-examples*/
 /*Footer*/
 /*Footer box*/
 footer {
-    background-color: #028A0F;
+    background-color: #213333;
 }
 
 
