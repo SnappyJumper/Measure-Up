@@ -333,6 +333,18 @@ footer {
 
 /*Media query for tablets or larger (768px and up)*/
 @media screen and (min-width: 768px) {
+    #img-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #hero-img {
+        
+        height: 500px;
+        width: fit-content;
+        
+    }
+    
     #calculator {
         border: 2px solid #000000;
         box-shadow: 2px 2px #4a5123, -0.5em 0 .4em #996515;
