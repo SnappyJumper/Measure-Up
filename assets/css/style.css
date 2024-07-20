@@ -114,27 +114,32 @@ h2 {
 /* Style the accordion panel. Note: hidden by default */
 .panel {
     text-align: center;
-    padding: 0 18px;
+    padding: 0px 18px;
     background-color: #996515;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    box-shadow: 0 3px #606060;
+}
+
+.panel p {
+    padding: 10px;
 }
 
 /*The + symbol when the accordion is closed*/
 .accordion:after {
-    content: '\02795';
     /* Unicode character for "plus" sign (+) */
+    content: '\02795';
     font-size: 13px;
     color: #996515;
     float: right;
     margin-left: 5px;
 }
 
-/*The -symbol when the accordion is open */
+/*The - symbol when the accordion is open */
 .active:after {
-    content: "\2796";
     /* Unicode character for "minus" sign (-) */
+    content: "\2796";  
 }
 
 /*Div Containing the conversion tool*/
@@ -187,16 +192,16 @@ from https://getcssscan.com/css-buttons-examples*/
 }
 
 .button-29:focus {
-    box-shadow: #9f7509 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #9f7509 0 -3px 0 inset;
+    box-shadow: #996515 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #9f7509 0 -3px 0 inset;
 }
 
 .button-29:hover {
-    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #9f7509 0 -3px 0 inset;
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #996515 0 -3px 0 inset;
     transform: translateY(-2px);
 }
 
 .button-29:active {
-    box-shadow: #9f7509 0 3px 7px inset;
+    box-shadow: #996515 0 3px 7px inset;
     transform: translateY(2px);
 }
 
@@ -274,6 +279,7 @@ from https://getcssscan.com/css-buttons-examples*/
     width: 100%;
     border: 1px solid #000000;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 th {
@@ -310,6 +316,6 @@ footer {
 }
 
 .social:hover {
-    color: #960018;
+    color: #9a351e;
 }
 
