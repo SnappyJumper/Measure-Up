@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     let userInput = document.getElementById("user-input").value;
                     // ensures the variable is a float
                     userInput = parseFloat(userInput);
-                    
+
                     //checks to see if userInput is a number and prints alert if the input is empty
                     if (isNaN(userInput)) {
                         alert("Please input a value");
@@ -176,20 +176,30 @@ function runConversion(conversionType) {
  * prints the output of the conversion to a span with ID output on the index page
  */
 function printOutput(initial, result, imperial, metric) {
-    //gets the output div and assigns it to new variable outputDiv
-    let outputDiv = document.getElementById("output-div");
-    //creates a new element and assigns it to a new variable outputSubTitle
-    let outputSubTitle = document.createElement("h3");
-    // fills the text within outputSubTitle
-    outputSubTitle.textContent = "Your Conversion:";
-    //inserts the outputSubTitle into the document before the first child of outputDiv
-    outputDiv.insertBefore(outputSubTitle, outputDiv.firstChild);
     // assigns the span to the variable outputSpan
     let outputSpan = document.getElementById("output");
-    // changes the inner html of the span to the template litteral
-    outputSpan.innerHTML = `${initial} ${imperial} is equal to ${result} ${metric}`;
-    // calls the addHistory function passing it four parameters
-    addHistory(initial, result, imperial, metric);
+
+
+    if (outputSpan.textContent === "") {
+        //gets the output div and assigns it to new variable outputDiv
+        let outputDiv = document.getElementById("output-div");
+        //creates a new element and assigns it to a new variable outputSubTitle
+        let outputSubTitle = document.createElement("h3");
+        // fills the text within outputSubTitle
+        outputSubTitle.textContent = "Your Conversion:";
+        //inserts the outputSubTitle into the document before the first child of outputDiv
+        outputDiv.insertBefore(outputSubTitle, outputDiv.firstChild);
+        // changes the inner html of the span to the template litteral
+        outputSpan.innerHTML = `${initial} ${imperial} is equal to ${result} ${metric}`;
+        // calls the addHistory function passing it four parameters
+        addHistory(initial, result, imperial, metric);
+    } else {
+        // changes the inner html of the span to the template litteral
+        outputSpan.innerHTML = `${initial} ${imperial} is equal to ${result} ${metric}`;
+        // calls the addHistory function passing it four parameters
+        addHistory(initial, result, imperial, metric);
+    }
+
 
 }
 

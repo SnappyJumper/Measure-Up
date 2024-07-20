@@ -246,8 +246,12 @@ from https://getcssscan.com/css-buttons-examples*/
 }
 
 #output-div p {
-    
     text-align: center;
+}
+
+#output-div h3 {
+    text-align: center;
+    text-decoration: underline;
 }
 
 /*The History Table*/
