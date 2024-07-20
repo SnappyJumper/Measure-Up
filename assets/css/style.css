@@ -139,13 +139,19 @@ h2 {
 /*The - symbol when the accordion is open */
 .active:after {
     /* Unicode character for "minus" sign (-) */
-    content: "\2796";  
+    content: "\2796";
 }
 
 /*Div Containing the conversion tool*/
 #calculator {
     margin: 0 5px;
-    height: 300px;
+    height: 350px;
+}
+
+#calculator h3 {
+    margin-top: 10px;
+    text-align: center;
+    
 }
 
 /*The div containing the options buttons*/
@@ -209,8 +215,14 @@ from https://getcssscan.com/css-buttons-examples*/
 /*Div containing the input box*/
 .input-area {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding-top: 10px;
+}
+
+.input-area label {
+    text-align: center;
+    
 }
 
 /* Algolia from https://copy-paste-css.com/form-input-text*/
@@ -229,6 +241,7 @@ from https://getcssscan.com/css-buttons-examples*/
     overflow: hidden;
     transition: all 100ms ease-in-out;
     text-align: center;
+    margin: 0px 100px;
 }
 
 #user-input:focus {
@@ -257,7 +270,6 @@ from https://getcssscan.com/css-buttons-examples*/
 
 #output-div h3 {
     text-align: center;
-    text-decoration: underline;
 }
 
 /*The History Table*/
@@ -319,3 +331,19 @@ footer {
     color: #9a351e;
 }
 
+/*Media query for tablets or larger (768px and up)*/
+@media screen and (min-width: 768px) {
+    #calculator {
+        border: 2px solid #000000;
+        margin-top: 10px;
+        height: 400px;
+    }
+
+    #user-input {
+        margin: 0px 300px;
+    }
+
+    .submit-area {
+        margin-top: 30px;
+    }
+}

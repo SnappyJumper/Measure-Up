@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
 
         <div id="calculator">
+                <h2 class="hidden-heading">The Calculator</h2>
+                <h3>Please Select Type Of Conversion</h3>
                 <div class="buttons">
                     <button class="options button-29" role="button" data-type="cups-liquid" id="cups-liquid">
                     Cups Liquid
@@ -34,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
 
                 <div class="input-area">
+                    <label for="user-input">Enter Imperial Here:</label>
                     <input id="user-input" type="number">
                 </div>
                 <div class="submit-area">
