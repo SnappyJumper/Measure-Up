@@ -265,9 +265,14 @@ from https://getcssscan.com/css-buttons-examples*/
 }
 
 /*The History Table*/
+#table-div {
+    margin: 0px 10px;
+}
+
 #history-table {
     width: 100%;
     border: 1px solid #000000;
+    border-radius: 5px;
 }
 
 th {

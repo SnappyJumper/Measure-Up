@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div id="table-header">    
                     <h2>Your Recent History</h2>
                 </div>
-                <div>
+                <div id="table-div">
                     <table id="history-table">  
                         <tr>
                             <th>Input</th>
