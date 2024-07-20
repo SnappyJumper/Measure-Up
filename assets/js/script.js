@@ -43,6 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
         <div>
             <div id="output-div">
+                    <h2 class="hidden-heading">Output</h2>
+
                     <p><span id="output"></span></p>
             </div>
             <div id="history">
@@ -98,6 +100,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         if (selection === "") {
                             //prints alert
                             alert("Please Select A Unit To Convert");
+                            //throws an error message should this happen because its not supposed to if the programme runs the default func cupsLiquid()
+                            throw "No unit was selected, Aborting";
                         } else if (selection === "cupsLiquid") {
                             // calls a function and passes it userInput
                             calculateCupsLiquid(userInput);
@@ -134,12 +138,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     runConversion(conversionType);
                 }
 
-            })
+            });
         }
         //runs the default conversion cups-liquid
         runConversion("cups-liquid");
-    })
-})
+    });
+});
 
 /**
  * determines which type of conversion you wish to perform and calls its relevant function
@@ -172,7 +176,14 @@ function runConversion(conversionType) {
  * prints the output of the conversion to a span with ID output on the index page
  */
 function printOutput(initial, result, imperial, metric) {
-
+    //gets the output div and assigns it to new variable outputDiv
+    let outputDiv = document.getElementById("output-div");
+    //creates a new element and assigns it to a new variable outputSubTitle
+    let outputSubTitle = document.createElement("h3");
+    // fills the text within outputSubTitle
+    outputSubTitle.textContent = "Your Conversion:";
+    //inserts the outputSubTitle into the document before the first child of outputDiv
+    outputDiv.insertBefore(outputSubTitle, outputDiv.firstChild);
     // assigns the span to the variable outputSpan
     let outputSpan = document.getElementById("output");
     // changes the inner html of the span to the template litteral

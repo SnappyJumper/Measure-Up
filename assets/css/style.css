@@ -142,17 +142,6 @@ h2 {
     height: 300px;
 }
 
-
-
-/*The Submit Button*/
-#submit {
-    width: fit-content;
-    padding-right: 10px;
-    padding-left: 10px;
-    font-size: 10px;
-    margin: 20px 20px;
-}
-
 /*The div containing the options buttons*/
 .buttons {
     height: 150px;
@@ -247,7 +236,21 @@ from https://getcssscan.com/css-buttons-examples*/
     justify-content: center;
 }
 
-/*The Output Table*/
+/*The Submit Button*/
+#submit {
+    width: fit-content;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 10px;
+    margin: 20px 20px;
+}
+
+#output-div p {
+    
+    text-align: center;
+}
+
+/*The History Table*/
 /*Div containing the Table Subheading*/
 #table-header {
     height: fit-content;
