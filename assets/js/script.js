@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 <div class="input-area">
                     <label for="user-input">Enter Imperial Here:</label>
-                    <input id="user-input" type="number">
+                    <input id="user-input" type="number" min="0">
                 </div>
                 <div class="submit-area">
                     <button class="options button-29" id="submit" data-type="submit"><span id="conversion">Please select a unit to convert</span></button>

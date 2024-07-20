@@ -151,7 +151,7 @@ h2 {
 #calculator h3 {
     margin-top: 10px;
     text-align: center;
-    
+
 }
 
 /*The div containing the options buttons*/
@@ -222,7 +222,7 @@ from https://getcssscan.com/css-buttons-examples*/
 
 .input-area label {
     text-align: center;
-    
+
 }
 
 /* Algolia from https://copy-paste-css.com/form-input-text*/
@@ -306,6 +306,7 @@ th {
 /*Footer box*/
 footer {
     background-color: #4a5123;
+
 }
 
 
@@ -337,14 +338,14 @@ footer {
         display: flex;
         justify-content: center;
     }
-    
+
     #hero-img {
-        
+
         height: 500px;
         width: fit-content;
-        
+
     }
-    
+
     #calculator {
         border: 2px solid #000000;
         box-shadow: 2px 2px #4a5123, -0.5em 0 .4em #996515;
@@ -367,5 +368,17 @@ footer {
 
     .submit-area {
         margin-top: 30px;
+    }
+
+    #history-table {
+        
+        margin-bottom: 100px;
+    }
+
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
     }
 }
