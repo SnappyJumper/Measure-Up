@@ -335,8 +335,18 @@ footer {
 @media screen and (min-width: 768px) {
     #calculator {
         border: 2px solid #000000;
-        margin-top: 10px;
-        height: 400px;
+        box-shadow: 2px 2px #4a5123, -0.5em 0 .4em #996515;
+        border-radius: 10px;
+        margin: 10px 20px;
+        height: 375px;
+    }
+
+    #calculator h3 {
+        margin-top: 20px;
+    }
+
+    .buttons {
+        height: 100px;
     }
 
     #user-input {
