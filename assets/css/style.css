@@ -241,7 +241,7 @@ from https://getcssscan.com/css-buttons-examples*/
     overflow: hidden;
     transition: all 100ms ease-in-out;
     text-align: center;
-    margin: 0px 100px;
+    margin: 0px 50px;
 }
 
 #user-input:focus {
@@ -332,8 +332,8 @@ footer {
     color: #9a351e;
 }
 
-/*Media query for tablets or larger (768px and up)*/
-@media screen and (min-width: 768px) {
+/*Media query for screens 480px and up*/
+@media screen and (min-width: 480px) {
     #img-container {
         display: flex;
         justify-content: center;
@@ -344,6 +344,10 @@ footer {
         height: 500px;
         width: fit-content;
 
+    }
+
+    #start-container {
+        margin-bottom: 200px;
     }
 
     #calculator {
@@ -363,7 +367,7 @@ footer {
     }
 
     #user-input {
-        margin: 0px 300px;
+        margin: 0px 150px;
     }
 
     .submit-area {
@@ -371,7 +375,6 @@ footer {
     }
 
     #history-table {
-        
         margin-bottom: 100px;
     }
 
@@ -380,5 +383,12 @@ footer {
         left: 0;
         bottom: 0;
         width: 100%;
+    }
+}
+
+/*Media query for laptop screens and up*/
+@media screen and (min-width: 992px) {
+    #user-input {
+        margin: 0px 400px;
     }
 }
