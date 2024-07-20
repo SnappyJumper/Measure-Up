@@ -64,7 +64,7 @@ h2 {
 
 /*Div containing the Welcome Paragraph*/
 #welcome-page {
-    background-color: pink;
+    background-color: #996515;
     border: 1px, solid, #000000;
     padding: 10px;
 }
@@ -92,8 +92,8 @@ h2 {
 /*Taken from W3Schools https://www.w3schools.com/howto/howto_js_accordion.asp*/
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: #996515;
+    color: #000000;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -102,19 +102,20 @@ h2 {
     outline: none;
     transition: 0.4s;
     margin-top: 53px;
+    box-shadow: 0 3px #606060;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
 .accordion:hover {
-    background-color: #ccc;
+    background-color: #996515;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
     text-align: center;
     padding: 0 18px;
-    background-color: white;
+    background-color: #996515;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -125,7 +126,7 @@ h2 {
     content: '\02795';
     /* Unicode character for "plus" sign (+) */
     font-size: 13px;
-    color: #777;
+    color: #996515;
     float: right;
     margin-left: 5px;
 }

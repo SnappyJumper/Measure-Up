@@ -95,11 +95,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     //checks to see if userInput is a number and prints alert if the input is empty
                     if (isNaN(userInput)) {
                         alert("Please input a value");
-                    } 
+                    }
                     //sets the max input value will print an alert if attempted
                     else if (userInput > 1000000) {
                         alert("Measurement exceeds the maximum");
-                    } 
+                    }
                     //sets the min input value (no negative or 0 input allowed) will print an alert if attempted
                     else if (userInput <= 0) {
                         alert("Please don't input negative numbers or zero!");
@@ -318,10 +318,6 @@ function calculateCupsSolid(input) {
     let metric = "Grams";
     //calls the func printOutput and passes it some parameters
     printOutput(input, output, imperial, metric);
-
-
-
-
 }
 
 /**
