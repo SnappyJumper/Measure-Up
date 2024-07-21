@@ -149,6 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             });
         }
+
         //runs the default conversion cups-liquid
         runConversion("cups-liquid");
     });
@@ -158,6 +159,11 @@ document.addEventListener("DOMContentLoaded", function () {
  * determines which type of conversion you wish to perform and calls its relevant function
  */
 function runConversion(conversionType) {
+
+    //clears user-input for the next calculation
+    document.getElementById("user-input").value = "";
+    //centers focus on the user-input so the user doesn't have to click it each time
+    document.getElementById("user-input").focus();
 
     //if the user wants to convert Cups Liquid
     if (conversionType === "cups-liquid") {
@@ -232,6 +238,10 @@ function addHistory(initial, result, imperial, metric) {
     cell3.innerHTML = `${result}`;
     cell4.innerHTML = `${metric}`;
 
+    //clears user-input for the next calculation
+    document.getElementById("user-input").value = "";
+    //centers focus on the user-input so the user doesn't have to click it each time
+    document.getElementById("user-input").focus();
 }
 
 /**

@@ -226,7 +226,10 @@ from https://getcssscan.com/css-buttons-examples*/
 
 .input-area label {
     text-align: center;
-
+    font-family: "Maname", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 10px;
 }
 
 /* Algolia from https://copy-paste-css.com/form-input-text*/
@@ -268,11 +271,13 @@ from https://getcssscan.com/css-buttons-examples*/
     margin: 20px 20px;
 }
 
-#output-div p {
+#output-div h3 {
     text-align: center;
+    font-size: x-large;
+    padding-bottom: 10px;
 }
 
-#output-div h3 {
+#output-div p {
     text-align: center;
 }
 
