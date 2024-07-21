@@ -202,7 +202,7 @@ from https://getcssscan.com/css-buttons-examples*/
 }
 
 .button-29:focus {
-    box-shadow: #996515 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #9f7509 0 -3px 0 inset;
+    box-shadow: #996515 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #996515 0 -3px 0 inset;
 }
 
 .button-29:hover {
@@ -249,7 +249,7 @@ from https://getcssscan.com/css-buttons-examples*/
 }
 
 #user-input:focus {
-    border-color: #3c4fe0;
+    border-color: #996515;
     box-shadow: 0 1px 0 0 rgb(35 38 59 / 5%);
 }
 

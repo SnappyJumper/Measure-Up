@@ -13,9 +13,9 @@ Visit te deployed site [here](https://snappyjumper.github.io/Measure-Up/).
 1. [User Experience (UX)](#user-experience-ux)
     1. [Project Goals](#project-goals)
     2. [User Stories](#user-stories)
-    3. [Colour Scheme]()
-    4. [Typography]()
-    5. [Wireframes]()
+    3. [Colour Scheme](#colour-scheme)
+    4. [Typography](#typography)
+    5. [Wireframes](#wireframes)
 2. [Features](#features)
 3. [Technologies Used]()
     1. [Languages Used]()
@@ -64,3 +64,32 @@ Visit te deployed site [here](https://snappyjumper.github.io/Measure-Up/).
 * As a user, I want the website to save a history of what I have converted.
 
 * As a user, I want to be able to access this tool on different devices.
+
+### Colour Scheme
+
+The colours used throughout the project are as follows: 
+
+* #FFFFFF for the heading text
+
+* #000000 for the boarders and the main body text
+
+* #4A5123 for the background colour of the header and footer. Also in the box shadow colour of the workspace on larger screens.
+
+* #996515 for the background colour of the welcome message and in the accordion tab. Also found in the buttons and input box, when interacted with, and as part of the box shadow colour of the workspace on larger screens.
+
+* #9A351E for the start, conversion and submit buttons as part of a radial-gradient. Also in the hovers for the social media links.
+
+* #DD2D2D for the start, conversion and submit buttons as part of a radial-gradient.
+
+* #606060 for the box shadow on the header and the accordion tab.
+
+* #fff and #D6D6E7 are found in the input box
+
+The shades of green and gold add a feel of elegance to the site, while the shades of red add a nice contrast and make the buttons stand out.
+
+### Typography
+
+The main font used in the site is Poppins from Google Font with a back up of sans-serif, should it fail to load. Maname, also from Google Fonts, is used for all headings and subheadings including the logo. It is backed up by serif should it fail to load.
+
+### Wireframes
+
