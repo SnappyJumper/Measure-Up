@@ -388,6 +388,8 @@ footer {
 
 /*Media query for laptop screens and up*/
 @media screen and (min-width: 992px) {
+    
+    
     #user-input {
         margin: 0px 400px;
     }

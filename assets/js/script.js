@@ -12,12 +12,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
         //over writes the workspace with new html code
         workspace.innerHTML = `
-        <button class="accordion">Ehh... how do I use this?</button>
-        <div class="panel">
-            <p>To get started simply choose what unit you're starting with below, input the measurement in the space provided and press the convert button to see your result!</p>
-        </div>
-
-        <div id="calculator">
+        <section>
+            <button class="accordion">Ehh... how do I use this?</button>
+            <div class="panel">
+                <p>To get started simply choose what unit you're starting with below, input the measurement in the space provided and press the convert button to see your result!</p>
+            </div>
+        </section>
+        <section id="calculator">
                 <h2 class="hidden-heading">The Calculator</h2>
                 <h3>Please Select Type Of Conversion</h3>
                 <div class="buttons">
@@ -34,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     Fluid Ounces
                     </button>
                 </div>
-
                 <div class="input-area">
                     <label for="user-input">Enter Imperial Here:</label>
                     <input id="user-input" type="number" min="0">
@@ -42,15 +42,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="submit-area">
                     <button class="options button-29" id="submit" data-type="submit"><span id="conversion">Please select a unit to convert</span></button>
                 </div>
-               
-        </div>
-        <div>
-            <div id="output-div">
+        </section>
+        <section id="output-div">
                     <h2 class="hidden-heading">Output</h2>
 
                     <p><span id="output"></span></p>
-            </div>
-            <div id="history">
+            </section>
+            <section id="history">
                 <div id="table-header">    
                     <h2>Your Recent History</h2>
                 </div>
@@ -64,8 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         </tr>
                     </table>
                 </div>
-            </div>
-        </div>`;
+            </section>`;
         //the info accordion    
         // fetches the element by its class name accordion and assigns it to acc
         let acc = document.getElementsByClassName("accordion");
