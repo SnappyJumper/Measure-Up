@@ -25,8 +25,11 @@ header {
     box-shadow: 0 3px #606060;
     background-color: #4a5123;
     height: 50px;
-    padding: 20px, 0, 20px;
+    padding-bottom: 18px;
     color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header a {
@@ -43,11 +46,12 @@ h1 {
 }
 
 /*Subheading Styles*/
-h2 {
+h2, h3 {
     font-family: "Maname", serif;
     font-weight: 400;
     font-style: normal;
 }
+
 
 /*Hides the heading so that it remains for search engines but not visible*/
 .hidden-heading {
@@ -65,7 +69,7 @@ h2 {
 /*Div containing the Welcome Paragraph*/
 #welcome-page {
     background-color: #996515;
-    border: 1px, solid, #000000;
+    border: 1px solid #000000;
     padding: 10px;
 }
 
@@ -388,8 +392,8 @@ footer {
 
 /*Media query for laptop screens and up*/
 @media screen and (min-width: 992px) {
-    
-    
+
+
     #user-input {
         margin: 0px 400px;
     }
