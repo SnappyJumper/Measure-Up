@@ -95,4 +95,9 @@ The main font used in the site is Poppins from Google Font with a back up of san
 
 [Balsamiq] (https://balsamiq.com/) was the software used to generate wireframe mock-ups of the site and to demonstrate the placement of the elements within the page.
 
+Page | Desktop | Mobile
+--- | --- | ---
+Welcome Page | ![Welcome Page Wireframe Desktop](assets/readme-files/balsamiq-desktop-wireframe-1.png) | ![Welcome Page Wireframe Mobile](assets/readme-files/balsamiq-mobile-wireframe-1.png)
+Tool Section (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe Desktop Tab Undepoyed](assets/readme-files/balsamiq-desktop-wireframe-2.png) ![Tool Section Wireframe Desktop Tab Deployed](assets/readme-files/balsamiq-desktop-wireframe-3.png) | ![Tool Section Wireframe Mobile Tab Undeployed](assets/readme-files/balsamiq-mobile-wireframe-3.png) ![Tool Section Wireframe Mobile Tab Deployed](assets/readme-files/balsamiq-mobile-wireframe-2.png)
+
 
