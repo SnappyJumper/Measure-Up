@@ -4,7 +4,7 @@ Measure Up is a tool to help people transfer Imperial measurements over to Metri
 
 It is useful for helping bakers, both at home and professional, transfer recipes ingredients over to a system of measurement that they are more used to. 
 
-The website is easy to navigate and logs a history so the user can look back over the conversions the carried out.
+The website is easy to navigate and logs a history so the user can look back over the conversions they carried out.
 
 Visit te deployed site [here](https://snappyjumper.github.io/Measure-Up/).
 
@@ -100,4 +100,13 @@ Page | Desktop | Mobile
 Welcome Page | ![Welcome Page Wireframe Desktop](assets/readme-files/balsamiq-desktop-wireframe-1.png) | ![Welcome Page Wireframe Mobile](assets/readme-files/balsamiq-mobile-wireframe-1.png)
 Tool Section (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe Desktop Tab Undepoyed](assets/readme-files/balsamiq-desktop-wireframe-2.png) ![Tool Section Wireframe Desktop Tab Deployed](assets/readme-files/balsamiq-desktop-wireframe-3.png) | ![Tool Section Wireframe Mobile Tab Undeployed](assets/readme-files/balsamiq-mobile-wireframe-3.png) ![Tool Section Wireframe Mobile Tab Deployed](assets/readme-files/balsamiq-mobile-wireframe-2.png)
 
+[Back to top ^](#measure-up)
+
+## Features 
+
+### General
+
+* The website was designed from a mobile first perspective.
+
+* Design is responsive across all device sizes
 
