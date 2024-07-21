@@ -93,3 +93,6 @@ The main font used in the site is Poppins from Google Font with a back up of san
 
 ### Wireframes
 
+[Balsamiq] (https://balsamiq.com/) was the software used to generate wireframe mock-ups of the site and to demonstrate the placement of the elements within the page.
+
+
