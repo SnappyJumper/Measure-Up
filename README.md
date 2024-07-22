@@ -25,12 +25,12 @@ Visit the deployed site [here](https://snappyjumper.github.io/Measure-Up/).
 3. [Technologies Used](#technologies-used)
     1. [Languages Used](#languages-used)
     2. [Libraries, Frameworks and Programs Used](#libraries-frameworks-and-programs-used)
-4. [Testing]()
-    1. [Testing User Stories]()
-    2. [Code Validation]()
-    3. [Accessibility]()
-    4. [Tools Testing]()
-    5. [Manual Testing]()
+4. [Testing](#testing)
+    1. [Testing User Stories](#testing-user-stories)
+    2. [Code Validation](#code-validation)
+    3. [Accessibility](#accessibility)
+    4. [Tools Testing](#tools-testing)
+    5. [Manual Testing](#manual-testing)
 5. [Finished Product]()
 6. [Deployment]()
     1. [GitHub Pages]()
@@ -326,3 +326,65 @@ Tool Section (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe D
 * As a user, I want to be able to access this tool on different devices.
 
     - The site is responsive across a range of devices.
+
+### Code Validation
+
+* The [W3C Markup Validator](https://validator.w3.org/) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) tools were used to validate the HTML and CSS code respectively, ensuring there were no syntax errors.
+
+    - W3C Markup Validator Result 1
+    ![Index.html HTML Validation Result 1](assets/readme-files/index-html-validation-result-1.png)
+    ![Script.js HTML Validation Result 1](assets/readme-files/js-html-validation-result-1.png)
+
+        - The validator recommended that I add some section headings to the HTML to help identify the individual sections so I added them.
+
+        - The validator also told me that I had unnecessary roles on my buttons so I removed them.
+
+    - W3C Markup Validator Result 2
+    ![Index.html HTML Validation Result 2](assets/readme-files/index-html-validation-result-2.png)
+    ![Script.js HTML Validation Result 2](assets/readme-files/js-html-validation-result-2.png)
+
+        - After corrections validator resulted in no errors.
+
+    - W3C CSS Validator Result 1
+    ![Syles.css CSS Validation Result 1](assets/readme-files/css-validation-result-1.png)
+
+        - The validator pointed out a couple of instances i had used commas in my code where I shouldn't have. I removed them.
+
+    - W3C CSS Validator Result 2
+    ![Syles.css CSS Validation Result 2](assets/readme-files/css-validation-result-2.png)
+
+        - After corrections the validator resulted in no errors.
+
+* The [JSHints JavaScript Code Quality Tool](https://jshint.com/) was used to validate the JavaScript in the site.
+
+    - JSHints Result 1
+    ![JShints JavaScript Validation Result 1](assets/readme-files/jsquint-test-results-1.png)
+
+        - The validation warned me about functions calling an outer scoped variable could lead to confusion in semantics. I decided this wasn't a major issue in this project so I took no action.
+
+        - There were a few missing semi-colons in the code. I corrected this issue.
+
+    - JShins Result 2
+    ![JShints JavaScript Validation Result 2](assets/readme-files/jsquint-test-results-2.png)
+
+        - After corrections there were no major issues with the code.
+
+### Accessibility
+
+* Lighthouse in Chrome DevTools was used to confirm that the colours and fonts in the site were easy to read and accessible.
+
+* Lighthouse Report
+
+    ![Lighthouse Report](assets/readme-files/lighthouse-test.png)
+
+### Tools Testing
+
+* [Chrome DevTools](https://developer.chrome.com/docs/devtools/) Chrome DevTools was used throughout the duration of the project to test and modify the HTML and CSS code.
+
+* Responsiveness 
+
+    - Chrome Devtools was used during development to check the responsiveness across a range of devices.
+
+    - [Am I Responsive?](http://ami.responsivedesign.is/#) was used to test the responsiveness across a range of devices during development.
+
+### Manual Testing
