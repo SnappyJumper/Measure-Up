@@ -1,12 +1,14 @@
 # Measure Up
 
+![Measure Up Mockup Images](assets/readme-files/responsive-img.png)
+
 Measure Up is a tool to help people transfer Imperial measurements over to Metric.
 
 It is useful for helping bakers, both at home and professional, transfer recipes ingredients over to a system of measurement that they are more used to. 
 
 The website is easy to navigate and logs a history so the user can look back over the conversions they carried out.
 
-Visit te deployed site [here](https://snappyjumper.github.io/Measure-Up/).
+Visit the deployed site [here](https://snappyjumper.github.io/Measure-Up/).
 
 ## Table of Contents
 
@@ -17,6 +19,9 @@ Visit te deployed site [here](https://snappyjumper.github.io/Measure-Up/).
     4. [Typography](#typography)
     5. [Wireframes](#wireframes)
 2. [Features](#features)
+    1. [General](#general)
+    2. [Welcome Screen](#welcome-screen)
+    3. [Tool Screen](#tool-screen)
 3. [Technologies Used]()
     1. [Languages Used]()
     2. [Frameworks, Libraries and Programs Used]()
@@ -113,13 +118,177 @@ Tool Section (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe D
 * **Header**
 ![Header image](assets/readme-files/header-img.png)
 
-    - The header contains the logo which is also an anchor tag to the page. The header sits on top of the main content of the site in a fixed position.
+    - The header contains the logo which is also an anchor tag to the page. This is useful should the user wish to navigate back to the welcome screen. 
+    
+    - The header sits on top of the main content of the site in a fixed position. This allows the user easy access from anywhere on the page
+
+* **Accordion Tab**
+
+    - Tab Closed
+
+    ![Accordion Tab Closed](assets/readme-files/accordion-tab-img-closed.png)
+
+    - Tab Open
+
+    ![Accordion Tab Open](assets/readme-files/accordion-tab-img-open.png)
+    
+    - On the tool screen there is a accordion tab. 
+
+    - When active the panel under the tab displays information on how to use the conversion tool.
+
+    - The panel slides in and out of view when the tab is clicked on and the symbol on the right of the tab changes from + to -.
+
+* **Unit Buttons**
+
+    - Active
+
+    ![Active Button](assets/readme-files/unit-button-pressed.png)
+
+    - Inactive
+
+    ![Inactive Button](assets/readme-files/unit-button-unpressed.png)
+
+    - The buttons for selecting your starting unit have been styled so that they are responsive to being clicked on.
+
+    - When the button is pressed it raises up afterwards and the colour changes around its edge.
+
+    - When pressed again it returns to its previous appearance.
+
+* **Submit Button**
+
+    - Fluid Ounces selected
+
+    ![Fluid Ounces Submit Button](assets/readme-files/submit-button-change-1.png)
+
+    - Ounces selected
+
+    ![Ounces Submit Button](assets/readme-files/submit-button-change-2.png)
+
+    - The Submit Button is styled in the same way as the Unit Buttons.
+
+    - The text inside the submit button changes depending on what unit button you have selected.
+
+* **Input Box**
+
+    - Input Box in focus
+
+    ![Input Box Focus](assets/readme-files/input-box-clicked.png)
+
+    - Input Box no focus
+
+    ![Input Box No Focus](assets/readme-files/input-box-unclicked.png)
+
+    - The input box highlights when it is in focus
+
+    - After a conversion is complete or a new unit selected the previous input is deleted from the input box and the focus is pulled back to the input box. This is useful so the user doesn’t have to keep clicking on the box everytime. 
+
+* **Output Area and History Table**
+
+    - Table before inputs
+
+    ![Empty History Table](assets/readme-files/output-area-no-input.png)
+
+    - Table after inputs
+
+    ![History Table With Content](assets/readme-files/output-area-with-input.png)
+
+    - The Output gets printed directly to the DOM and is overwritten every time there is a new input calculated.
+
+    - Previous calculations get stored on a history table. This is useful when the user needs to look back over the calculations they've already done.
 
 * **Footer**
 ![Footer image](assets/readme-files/footer-img.png)
 
-    - The footer contains links to social media sites. The sites are displayed as icons. The footer sits at the bottom of the main content.
+    - The footer contains links to social media sites displayed as icons. 
 
-* **Main Content**
-![Welcome Screen](assets/readme-files/welcome-page-img.png) ![Tool page](assets/readme-files/main-content.png)
+    - The social media Icons highlight when the cursor is hovered over them.
 
+    - Clicking one of the links will open the corresponding site in a separate tab. This is useful for easy navigation back to the Measure Up page.
+
+### Welcome Screen
+
+* Mobile
+
+![Welcome Screen Mobile](assets/readme-files/welcome-screen-img.png)
+
+* Desktop
+
+![Welcome Screen Desktop](assets/readme-files/welcome-screen-desktop.png)
+
+* **Hero Image**
+
+    - The hero image was selected because scales have everything to do with the purpose of the site.
+
+    - The image is elegant and simple which complements the design of the site.
+
+* **Start Button**
+
+    - The start button's purpose is to alter the page so that it displays the tool screen.
+
+    - The start button is styled to stand out against the rest of the page and is inviting to press.
+
+### Tool Screen
+
+* Mobile
+
+![Tool Screen Mobile](assets/readme-files/tool-screen.png)
+
+* Desktop
+
+![Tool Screen Desktop](assets/readme-files/tool-screen-desktop.png)
+
+* **Unit And Submit Buttons**
+
+    - The styles of the buttons on the tool page were chosen to stand out and be enticing to press for the user.
+
+    - The layout of the buttons change on larger media devices to better use the extra space.
+
+* **Input Box**
+
+    - The input box is placed to the centre of the screen to better draw the users focus.
+
+    - The width of the box changes to better suit the larger media devices.
+
+[Back to top ^](#measure-up)
+
+## Technologies Used
+
+### Languages Used
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+
+### Libraries, Frameworks and Programs Used
+
+* [Google Fonts](https://fonts.google.com/)
+    - Google Fonts was used to import the Poppins and Maname fonts to the style.css file. These two fonts were then used throughout the site.
+
+* [Font Awesome](https://fontawesome.com/)
+    - Font Awesome was used to add icons to the site. These helped to create a better user experience.
+
+* [Balsamiq](https://balsamiq.com/)
+    - Balsamiq was the software used to construct the wireframes for the project in its design stage.
+
+* [GitPod](https://gitpod.io/)
+    - GitPod was used to write the code, commit it and push it to GitHub.
+
+* [GitHub](https://github.com/)
+    - GitHub was used to store the project in repositories after pushing.
+
+* [Am I Responsive?](http://ami.responsivedesign.is/#)
+    - Am I responsive was used to see the responsive design throughout the building of the project and to generate mockup imagery to be used in the readme file.
+
+* [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+    - Chrome DevTools was used throughout the development process to review code and test the responsiveness of the site.
+
+* [W3C Markup Validator](https://validator.w3.org/)
+    - W3C Markup Validator was used to validate the HTML code used in the site.
+
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+    - W3C CSS Validator was used to validate the CSS code used in the site.
+
+* [JSHint](https://jshint.com/)
+    - JSHint's JavaScript Code Quality Tool was used to validate the JavaScript used in the site.
+
+* [Favicon.io](https://favicon.io/)
+    - Favicon.io was used to generate the sites favicon.
