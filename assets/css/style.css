@@ -18,6 +18,7 @@ body {
     font-style: normal;
 }
 
+/*The header bar*/
 header {
     position: fixed;
     z-index: 99;
@@ -32,6 +33,7 @@ header {
     justify-content: center;
 }
 
+/*The heading anchor tag */
 header a {
     text-decoration: none;
     color: #FFFFFF;
@@ -46,7 +48,8 @@ h1 {
 }
 
 /*Subheading Styles*/
-h2, h3 {
+h2,
+h3 {
     font-family: "Maname", serif;
     font-weight: 400;
     font-style: normal;
@@ -126,6 +129,7 @@ h2, h3 {
     box-shadow: 0 3px #606060;
 }
 
+/*The paragraph in the accordions panel*/
 .panel p {
     padding: 10px;
 }
@@ -152,6 +156,7 @@ h2, h3 {
     height: 350px;
 }
 
+/*Subheading for the conversion tool*/
 #calculator h3 {
     margin-top: 10px;
     text-align: center;
@@ -201,15 +206,18 @@ from https://getcssscan.com/css-buttons-examples*/
     font-size: 15px;
 }
 
+/*When the button is focused*/
 .button-29:focus {
     box-shadow: #996515 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #996515 0 -3px 0 inset;
 }
 
+/*When the button is being hovered over*/
 .button-29:hover {
     box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #996515 0 -3px 0 inset;
     transform: translateY(-2px);
 }
 
+/*when the button is active*/
 .button-29:active {
     box-shadow: #996515 0 3px 7px inset;
     transform: translateY(2px);
@@ -224,6 +232,7 @@ from https://getcssscan.com/css-buttons-examples*/
     padding-top: 10px;
 }
 
+/*Label for the Input Box*/
 .input-area label {
     text-align: center;
     font-family: "Maname", serif;
@@ -233,6 +242,7 @@ from https://getcssscan.com/css-buttons-examples*/
 }
 
 /* Algolia from https://copy-paste-css.com/form-input-text*/
+/*Input Box*/
 #user-input {
     position: relative;
     cursor: text;
@@ -251,6 +261,7 @@ from https://getcssscan.com/css-buttons-examples*/
     margin: 0px 50px;
 }
 
+/*when Input Box is in focus*/
 #user-input:focus {
     border-color: #996515;
     box-shadow: 0 1px 0 0 rgb(35 38 59 / 5%);
@@ -271,12 +282,14 @@ from https://getcssscan.com/css-buttons-examples*/
     margin: 20px 20px;
 }
 
+/*Subheading for the output*/
 #output-div h3 {
     text-align: center;
     font-size: x-large;
     padding-bottom: 10px;
 }
 
+/*The output text*/
 #output-div p {
     text-align: center;
 }
@@ -291,11 +304,12 @@ from https://getcssscan.com/css-buttons-examples*/
 
 }
 
-/*The History Table*/
+/*The History Table Div*/
 #table-div {
     margin: 0px 10px;
 }
 
+/*The History Table*/
 #history-table {
     width: 100%;
     border: 1px solid #000000;
@@ -303,10 +317,12 @@ from https://getcssscan.com/css-buttons-examples*/
     margin-bottom: 10px;
 }
 
+/*Table Heading*/
 th {
     border-bottom: 2px solid #000000;
 }
 
+/*Table Data*/
 #history-table td {
     text-align: center;
 }
@@ -337,17 +353,21 @@ footer {
 
 }
 
+/*Social Icons Hover effect*/
 .social:hover {
     color: #9a351e;
 }
 
 /*Media query for screens 480px and up*/
 @media screen and (min-width: 480px) {
+
+    /*Hero Image Div*/
     #img-container {
         display: flex;
         justify-content: center;
     }
 
+    /*Hero Image*/
     #hero-img {
 
         height: 500px;
@@ -355,10 +375,12 @@ footer {
 
     }
 
+    /*Start Button Div*/
     #start-container {
         margin-bottom: 200px;
     }
 
+    /*Div containing the conversion tool*/
     #calculator {
         border: 2px solid #000000;
         box-shadow: 2px 2px #4a5123, -0.5em 0 .4em #996515;
@@ -367,26 +389,32 @@ footer {
         height: 375px;
     }
 
+    /*Subheading for conversion tool*/
     #calculator h3 {
         margin-top: 20px;
     }
 
+    /*Buttons Class*/
     .buttons {
         height: 100px;
     }
 
+    /*Input Box*/
     #user-input {
         margin: 0px 150px;
     }
 
+    /*Div containing submit button*/
     .submit-area {
         margin-top: 30px;
     }
 
+    /*History Table*/
     #history-table {
         margin-bottom: 100px;
     }
 
+    /*Footer*/
     footer {
         position: fixed;
         left: 0;
@@ -398,7 +426,7 @@ footer {
 /*Media query for laptop screens and up*/
 @media screen and (min-width: 992px) {
 
-
+    /*Input Box*/
     #user-input {
         margin: 0px 400px;
     }
