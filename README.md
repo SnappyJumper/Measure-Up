@@ -110,3 +110,16 @@ Tool Section (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe D
 
 * Design is responsive across all device sizes
 
+* **Header**
+![Header image](assets/readme-files/header-img.png)
+
+    - The header contains the logo which is also an anchor tag to the page. The header sits on top of the main content of the site in a fixed position.
+
+* **Footer**
+![Footer image](assets/readme-files/footer-img.png)
+
+    - The footer contains links to social media sites. The sites are displayed as icons. The footer sits at the bottom of the main content.
+
+* **Main Content**
+![Welcome Screen](assets/readme-files/welcome-page-img.png) ![Tool page](assets/readme-files/main-content.png)
+
