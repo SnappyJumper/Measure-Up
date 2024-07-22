@@ -22,9 +22,9 @@ Visit the deployed site [here](https://snappyjumper.github.io/Measure-Up/).
     1. [General](#general)
     2. [Welcome Screen](#welcome-screen)
     3. [Tool Screen](#tool-screen)
-3. [Technologies Used]()
-    1. [Languages Used]()
-    2. [Frameworks, Libraries and Programs Used]()
+3. [Technologies Used](#technologies-used)
+    1. [Languages Used](#languages-used)
+    2. [Libraries, Frameworks and Programs Used](#libraries-frameworks-and-programs-used)
 4. [Testing]()
     1. [Testing User Stories]()
     2. [Code Validation]()
@@ -98,7 +98,7 @@ The main font used in the site is Poppins from Google Font with a back up of san
 
 ### Wireframes
 
-[Balsamiq] (https://balsamiq.com/) was the software used to generate wireframe mock-ups of the site and to demonstrate the placement of the elements within the page.
+[Balsamiq](https://balsamiq.com/) was the software used to generate wireframe mock-ups of the site and to demonstrate the placement of the elements within the page.
 
 Page | Desktop | Mobile
 --- | --- | ---
@@ -292,3 +292,37 @@ Tool Section (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe D
 
 * [Favicon.io](https://favicon.io/)
     - Favicon.io was used to generate the sites favicon.
+
+[Back to top ^](#measure-up)
+
+## Testing
+
+### Testing User Stories
+
+* As a user, I want the website to be easy to navigate.
+
+    - The website is focused to two pages to make it easy to navigate.
+
+    - Buttons on the site stand out so the user knows where to click next.
+
+    - The site has instructions on each page to help the user to take the next step.
+
+* As a user, I want the tool to be easy to use.
+
+    - The tool itself is easy to use, with instructions throughout and a help tab if the user is stuck.
+
+    - User history is automatically presented on the screen so the user only has to convert a measurement once.
+
+* As a user, I want the results to be clear and easy to understand.
+
+    - Results are printed on the screen in an easy to read format with clear indication of which measurement is which.
+
+    - The history table displays all its data in a nice easy to read table.
+
+* As a user, I want the website to save a history of what I have converted.
+
+    - The site saves your previous conversions to a convienient table.
+
+* As a user, I want to be able to access this tool on different devices.
+
+    - The site is responsive across a range of devices.
