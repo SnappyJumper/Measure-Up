@@ -85,7 +85,7 @@ h3 {
 
 /*Div containing the Start Button*/
 #start-container {
-
+    margin-bottom: 100px;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -205,7 +205,6 @@ from https://getcssscan.com/css-buttons-examples*/
     text-decoration: none;
     transition: box-shadow .15s, transform .15s;
     user-select: none;
-    -webkit-user-select: none;
     touch-action: manipulation;
     white-space: nowrap;
     will-change: box-shadow, transform;

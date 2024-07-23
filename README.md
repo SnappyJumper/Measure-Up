@@ -348,7 +348,9 @@ Tool Section (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe D
     - W3C CSS Validator Result 1
     ![Syles.css CSS Validation Result 1](assets/readme-files/css-validation-result-1.png)
 
-        - The validator pointed out a couple of instances i had used commas in my code where I shouldn't have. I removed them.
+        - The validator pointed out a couple of instances I had used commas in my code where I shouldn't have. I removed them.
+
+        - I removed line 193 in the css as it was not required.
 
     - W3C CSS Validator Result 2
     ![Syles.css CSS Validation Result 2](assets/readme-files/css-validation-result-2.png)
