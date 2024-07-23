@@ -25,6 +25,8 @@ header {
     width: 100%;
     box-shadow: 0 3px #606060;
     background-color: #4a5123;
+    background: rgb(74, 81, 35);
+    background: linear-gradient(90deg, rgba(74, 81, 35, 1) 48%, rgba(153, 101, 21, 1) 72%);
     height: 50px;
     padding-bottom: 18px;
     color: #FFFFFF;
@@ -100,6 +102,8 @@ h3 {
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     background-color: #996515;
+    background: rgb(74, 81, 35);
+    background: linear-gradient(90deg, rgba(74, 81, 35, 1) 48%, rgba(153, 101, 21, 1) 72%);
     color: #000000;
     cursor: pointer;
     padding: 18px;
@@ -123,6 +127,8 @@ h3 {
     text-align: center;
     padding: 0px 18px;
     background-color: #996515;
+    background: rgb(74, 81, 35);
+    background: linear-gradient(90deg, rgba(74, 81, 35, 1) 48%, rgba(153, 101, 21, 1) 72%);
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -331,7 +337,8 @@ th {
 /*Footer box*/
 footer {
     background-color: #4a5123;
-
+    background: rgb(74, 81, 35);
+    background: linear-gradient(90deg, rgba(74, 81, 35, 1) 48%, rgba(153, 101, 21, 1) 72%);
 }
 
 
@@ -426,7 +433,7 @@ footer {
 @media screen and (min-width: 992px) {
 
     #welcome {
-        display:flex;
+        display: flex;
         justify-content: space-around;
     }
 
@@ -465,7 +472,7 @@ footer {
     #justify {
         display: flex;
         align-items: center;
-        flex-direction: column;  
+        flex-direction: column;
     }
 
     #calculator {
@@ -487,6 +494,6 @@ footer {
     }
 
     #history {
-        width:100%;
+        width: 100%;
     }
 }
