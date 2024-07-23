@@ -339,6 +339,11 @@ footer {
     background-color: #4a5123;
     background: rgb(74, 81, 35);
     background: linear-gradient(90deg, rgba(74, 81, 35, 1) 48%, rgba(153, 101, 21, 1) 72%);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
 }
 
 
@@ -420,13 +425,6 @@ footer {
         margin-bottom: 100px;
     }
 
-    /*Footer*/
-    footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-    }
 }
 
 /*Media query for laptop screens and up*/
