@@ -393,10 +393,10 @@ Tool Section (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe D
 
 Browser | Outcome | Result
 --- | --- | ---
-Google Chrome |  | 
-Safari |  |
-Mozilla Firefox |  |
-Microsoft Edge |  |
+Google Chrome | No appearance, responsiveness nor functionality issues. | Pass
+Safari | No appearance, responsiveness nor functionality issues. | Pass
+Mozilla Firefox | No appearance, responsiveness nor functionality issues. | Pass
+Microsoft Edge | No appearance, responsiveness nor functionality issues. | Pass
 
 * Device Compatibility
 
@@ -427,5 +427,11 @@ iPhone 15 | No appearance, responsiveness nor functionality issues. | Pass
 
     Feature | Outcome | Result
     --- | --- | ---
+    Accordion Button | The accordion button starts off hiding its panel. When it is pressed the panel slides out and the symbol on the right changes from a + to a -. When clicked again the process reverts to its initial state | Pass
     Unit Buttons | The unit buttons clicked, hovered and active styles all run properly. Each individual button alters the submit button in the expected way and when the submit button is pressed the correct conversion, relative to the Unit button pressed, is carried out. | Pass
-    Input Box | Input Box pulls focus when each unit button is pressed and the same result with the submit button. The box borders highlight when it is selected. The box deletes whatever input was last placed in it after 
+    Input Box | Input Box pulls focus when each unit button is pressed and the same result with the submit button. The box borders highlight when it is selected. The box will only accept number inputs and only if they are greater than zero and less than one million. It the value violates this then an alert will display. The box deletes whatever input was last placed in it after the submit button is pressed or when a new unit button is pressed. | Pass
+    Submit Button | The text within the button changes depending on what unit button is currently pressed. All clicked, hover and active styles are functioning properly. When the submit button is pressed the result gets printed to the page and the result is also added to the history table. If the submit button is pressed when there is no value present in the input box an alert will display asking the user to input a value. | Pass
+    Conversion Result | The result gets printed once the submit button is pressed and the heading "Your Conversion:" displays above the result. The result is displayed in an easy to read sentence which includes your original input and unit and the result and its metric unit. | Pass
+    History Table | The table accepts additional data every time the submit button is presssed, so long as the value does not violate the conditions of the input box. The data is displayed neatly in clearly labeled collums and the rows print the most recent conversion to the top of the table pushing the rest down. | Pass
+
+    [Back to top ^](#measure-up)
