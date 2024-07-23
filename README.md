@@ -72,6 +72,7 @@ Visit the deployed site [here](https://snappyjumper.github.io/Measure-Up/).
 
 ### Colour Scheme
 
+![Website Colours](assets/readme-files/colours.png)
 The colours used throughout the project are as follows: 
 
 * #FFFFFF for the heading text
@@ -88,7 +89,7 @@ The colours used throughout the project are as follows:
 
 * #606060 for the box shadow on the header and the accordion tab.
 
-* #fff and #D6D6E7 are found in the input box
+* #D6D6E7 is found in the input box
 
 The shades of green and gold add a feel of elegance to the site, while the shades of red add a nice contrast and make the buttons stand out.
 
