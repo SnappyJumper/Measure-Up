@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <p>To get started simply choose what unit you're starting with below, input the measurement in the space provided and press the convert button to see your result!</p>
             </div>
         </section>
+        <div id="justify">
         <section id="calculator">
                 <h2 class="hidden-heading">The Calculator</h2>
                 <h3>Please Select Type Of Conversion</h3>
@@ -63,7 +64,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         </tr>
                     </table>
                 </div>
-            </section>`;
+            </section>
+            </div>`;
         //the info accordion    
         // fetches the element by its class name accordion and assigns it to acc
         let acc = document.getElementsByClassName("accordion");
