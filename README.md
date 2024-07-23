@@ -388,3 +388,37 @@ Tool Section (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe D
     - [Am I Responsive?](http://ami.responsivedesign.is/#) was used to test the responsiveness across a range of devices during development.
 
 ### Manual Testing
+
+* Browser Compatibility
+
+Browser | Outcome | Result
+--- | --- | ---
+Google Chrome |  | 
+Safari |  |
+Mozilla Firefox |  |
+Microsoft Edge |  |
+
+* Device Compatibility
+
+Device | Outcome | Result
+--- | --- | ---
+MacBook Pro 13'' | No appearance, responsiveness nor functionality issues. | Pass
+Acer Aspire V | No appearance, responsiveness nor functionality issues. | Pass
+iPad Pro 10.5'' | No appearance, responsiveness nor functionality issues. | Pass
+OnePlus 10 Pro | No appearance, responsiveness nor functionality issues. | Pass
+iPhone 15 | No appearance, responsiveness nor functionality issues. | Pass
+
+* Common Elements Testing
+
+    - General
+
+    Feature | Outcome | Result
+    --- | --- | ---
+    Logo | Anchor tag brings the user to the welcome screen before the JavaScript alters the DOM. | Pass
+    Social Links | The icons all display properly and they highlight when hovered on. When the icons are clicked they open a new tab which displays the relative social media site. | Pass
+    
+    - Welcome Screen
+
+    Feature | Outcome | Result
+    --- | --- | ---
+    
