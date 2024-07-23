@@ -356,6 +356,7 @@ footer {
 /*Social Icons Hover effect*/
 .social:hover {
     color: #9a351e;
+    transition: 1s;
 }
 
 /*Media query for screens 480px and up*/
@@ -444,9 +445,21 @@ footer {
         max-width: 450px;
     }
 
+    #welcome-page p {
+        font-size: 1.2rem;
+    }
+
     #start-container {
         margin-bottom: 0;
         margin-top: 40px;
+    }
+
+    .accordion {
+        font-size: 1rem;
+    }
+
+    .panel p {
+        font-size: 1rem;
     }
 
     #justify {
@@ -467,6 +480,10 @@ footer {
     /*Input Box*/
     #user-input {
         margin: 0px 100px;
+    }
+
+    #conversion {
+        font-size: 1rem;
     }
 
     #history {
