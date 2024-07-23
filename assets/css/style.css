@@ -424,6 +424,28 @@ footer {
 /*Media query for laptop screens and up*/
 @media screen and (min-width: 992px) {
 
+    #welcome {
+        display:flex;
+        justify-content: space-around;
+    }
+
+    #message-and-start {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        
+    }
+
+    #welcome-page {
+        max-width: 450px;
+    }
+
+    #start-container {
+        margin-bottom: 0;
+    }
+
     /*Input Box*/
     #user-input {
         margin: 0px 400px;

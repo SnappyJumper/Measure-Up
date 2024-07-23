@@ -31,7 +31,7 @@ Visit the deployed site [here](https://snappyjumper.github.io/Measure-Up/).
     3. [Accessibility](#accessibility)
     4. [Tools Testing](#tools-testing)
     5. [Manual Testing](#manual-testing)
-5. [Finished Product]()
+5. [Finished Product](#finished-product)
 6. [Deployment]()
     1. [GitHub Pages]()
 7. [Credits]
@@ -435,3 +435,5 @@ iPhone 15 | No appearance, responsiveness nor functionality issues. | Pass
     History Table | The table accepts additional data every time the submit button is presssed, so long as the value does not violate the conditions of the input box. The data is displayed neatly in clearly labeled collums and the rows print the most recent conversion to the top of the table pushing the rest down. | Pass
 
     [Back to top ^](#measure-up)
+
+    ## Finished Product

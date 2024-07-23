@@ -3,7 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="assets/css/style.css">
-    
+
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/e73dba1e03.js" crossorigin="anonymous"></script>
     <link rel="manifest" href="/site.webmanifest">
@@ -11,7 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Meta tags for search engines-->
     <meta name="description" content="Measure Up. Web tool for converting imperial units to metric.">
-    <meta name="keywords" content="measuring, weight, weighing, baking, imperial, metric, converter, cups, grams, ml, ounces, scale">
+    <meta name="keywords"
+        content="measuring, weight, weighing, baking, imperial, metric, converter, cups, grams, ml, ounces, scale">
     <!--Title-->
     <title>Measure Up</title>
     <!--Favicon taken from https://favicon.io/emoji-favicons/balance-scale-->
@@ -29,30 +30,39 @@
     </header>
     <!--The main workspace for both the welcome screen and the tool screen-->
     <main id="workspace">
-        <section id="img-container">
-            <h2 class="hidden-heading">Weighing Scale Image</h2>
-            <!--Hero Image-->
-            <!--Image from JJ Jordan https://www.pexels.com/photo/yellow-and-red-round-fruit-on-brown-and-white-weighing-scale-9241897/-->
-            <img id="hero-img" src="assets/images/scales.jpg" alt="Weighing scales and fruit">
-        </section>
-        <section id="welcome-page">
-            <h2 class="hidden-heading">Welcome Message</h2>
-            <!--Paragraph explaining what the tool is for-->
-            <p>Welcome to Measure Up, our handy little tool to help you convert those pesky Imperial
-                measurements
-                over
-                to Metric. Just select what you want to convert, input your measurement and you'll be baking
-                in no
-                time!
-            </p>
-        </section>
-        <section>
-            <h2 class="hidden-heading">The Start Button</h2>
-            <div id="start-container">
-                <!--The start button to display the tool screen-->
-                <button id="start-button" class="button-29">Let's get started!</button>
-            </div>
-        </section>
+        <div id="welcome">
+            <section>
+                <h2 class="hidden-heading">Weighing Scale Image</h2>
+                <div id="img-container">
+
+                    <!--Hero Image-->
+                    <!--Image from JJ Jordan https://www.pexels.com/photo/yellow-and-red-round-fruit-on-brown-and-white-weighing-scale-9241897/-->
+                    <img id="hero-img" src="assets/images/scales.jpg" alt="Weighing scales and fruit">
+
+                </div>
+            </section>
+            <section id="message-and-start">
+                <h2 class="hidden-heading">Welcome Message and Start Button</h2>
+
+                <div id="welcome-page">
+                    <!--Paragraph explaining what the tool is for-->
+                    <p>Welcome to Measure Up, our handy little tool to help you convert those pesky Imperial
+                        measurements
+                        over
+                        to Metric. Just select what you want to convert, input your measurement and you'll be baking
+                        in no
+                        time!
+                    </p>
+                </div>
+
+                <div id="start-container">
+                    <!--The start button to display the tool screen-->
+                    <button id="start-button" class="button-29">Let's get started!</button>
+                </div>
+
+
+            </section>
+        </div>
     </main>
     <footer>
         <!--section contains icons with links to social media sites-->
