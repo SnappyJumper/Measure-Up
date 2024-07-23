@@ -421,4 +421,11 @@ iPhone 15 | No appearance, responsiveness nor functionality issues. | Pass
 
     Feature | Outcome | Result
     --- | --- | ---
-    
+    Start Button | Button's hover and click styles all run properly. When the button is clicked the JavaScript writes new HTML to the page brining the user to the tool screen.
+
+    - Tool Screen
+
+    Feature | Outcome | Result
+    --- | --- | ---
+    Unit Buttons | The unit buttons clicked, hovered and active styles all run properly. Each individual button alters the submit button in the expected way and when the submit button is pressed the correct conversion, relative to the Unit button pressed, is carried out. | Pass
+    Input Box | Input Box pulls focus when each unit button is pressed and the same result with the submit button. The box borders highlight when it is selected. The box deletes whatever input was last placed in it after 
