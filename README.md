@@ -486,7 +486,7 @@ iPhone 15 | No appearance, responsiveness nor functionality issues. | Pass
 
     ### Code
 
-    * [Stack Overflow](https://stackoverflow.com/) and [W3Schools](https://www.w3schools.com/) were regularly consulted for inspiration and with help understanding some of the code.
+    * [Stack Overflow](https://stackoverflow.com/) and [W3Schools](https://www.w3schools.com/) were regularly consulted for inspiration and for help understanding some of the code.
 
     * The code for the accordion tab was an altered version of W3Schools code found [here](https://www.w3schools.com/howto/howto_js_accordion.asp)
 
