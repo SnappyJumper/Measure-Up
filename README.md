@@ -4,7 +4,7 @@
 
 Measure Up is a tool to help people transfer Imperial measurements over to Metric.
 
-It is useful for helping bakers, both at home and professional, transfer recipes ingredients over to a system of measurement that they are more used to. 
+It is useful for helping bakers, both at home and professionally, transfer recipe ingredients over to a system of measurement that they are more used to. 
 
 The website is easy to navigate and logs a history so the user can look back over the conversions they carried out.
 
@@ -32,13 +32,13 @@ Visit the deployed site [here](https://snappyjumper.github.io/Measure-Up/).
     4. [Tools Testing](#tools-testing)
     5. [Manual Testing](#manual-testing)
 5. [Finished Product](#finished-product)
-6. [Deployment]()
-    1. [GitHub Pages]()
-7. [Credits]
-    1. [Content]()
-    2. [Media]()
-    3. [Code]()
-8. [Acknowledgements]()
+6. [Deployment](#deployment)
+    1. [GitHub Pages](#github-pages)
+7. [Credits](#credits)
+    1. [Content](#content)
+    2. [Media](#media)
+    3. [Code](#code)
+8. [Acknowledgements](#acknowledgements)
 
 ***
 
@@ -48,13 +48,13 @@ Visit the deployed site [here](https://snappyjumper.github.io/Measure-Up/).
 
 * The website provides a structure that is both easy to understand and to navigate.
 
-* Has a neat appearance but also colourful enough to give a friendly tone.
+* Has a neat appearance but is also colourful enough to give a friendly tone.
 
-* Has a welcome screen to inform the user how to opperate the tool.
+* Has a welcome screen to inform the user how to operate the tool.
 
 * Has a responsive design accessible across a range of devices.
 
-* Prints the result in an easy to read format.
+* Prints the result in an easy-to-read format.
 
 * Writes a history of conversions to a table so the user can look back over their previous calculations.
 
@@ -77,7 +77,7 @@ The colours used throughout the project are as follows:
 
 * #FFFFFF for the heading text
 
-* #000000 for the boarders and the main body text
+* #000000 for the borders and the main body text
 
 * #4A5123 for the background colour of the header and footer. Also in the box shadow colour of the workspace on larger screens.
 
@@ -95,7 +95,7 @@ The shades of green and gold add a feel of elegance to the site, while the shade
 
 ### Typography
 
-The main font used in the site is Poppins from Google Font with a back up of sans-serif, should it fail to load. Maname, also from Google Fonts, is used for all headings and subheadings including the logo. It is backed up by serif should it fail to load.
+The main font used in the site is Poppins from Google Font with a backup of sans-serif, should it fail to load. Maname, also from Google Fonts, is used for all headings and subheadings including the logo. It is backed up by serif should it fail to load.
 
 ### Wireframes
 
@@ -112,7 +112,7 @@ Tool Screen (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe De
 
 ### General
 
-* The website was designed from a mobile first perspective.
+* The website was designed from a mobile-first perspective.
 
 * Design is responsive across all device sizes
 
@@ -133,7 +133,7 @@ Tool Screen (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe De
 
     ![Accordion Tab Open](assets/readme-files/accordion-tab-img-open.png)
     
-    - On the tool screen there is a accordion tab. 
+    - On the tool screen there is an accordion tab. 
 
     - When active the panel under the tab displays information on how to use the conversion tool.
 
@@ -151,7 +151,7 @@ Tool Screen (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe De
 
     - The buttons for selecting your starting unit have been styled so that they are responsive to being clicked on.
 
-    - When the button is pressed it raises up afterwards and the colour changes around its edge.
+    - When the button is pressed it rises up afterwards and the colour changes around its edge.
 
     - When pressed again it returns to its previous appearance.
 
@@ -181,7 +181,7 @@ Tool Screen (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe De
 
     - The input box highlights when it is in focus
 
-    - After a conversion is complete or a new unit selected the previous input is deleted from the input box and the focus is pulled back to the input box. This is useful so the user doesn’t have to keep clicking on the box everytime. 
+    - After a conversion is complete or a new unit selected the previous input is deleted from the input box and the focus is pulled back to the input box. This is useful so the user doesn’t have to keep clicking on the box every time. 
 
 * **Output Area and History Table**
 
@@ -250,7 +250,7 @@ Tool Screen (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe De
 
 * **Input Box**
 
-    - The input box is placed to the centre of the screen to better draw the users focus.
+    - The input box is placed at the centre of the screen to better draw the user's focus.
 
     - The width of the box changes to better suit the larger media devices.
 
@@ -296,7 +296,7 @@ Tool Screen (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe De
     - JSHint's JavaScript Code Quality Tool was used to validate the JavaScript used in the site.
 
 * [Favicon.io](https://favicon.io/)
-    - Favicon.io was used to generate the sites favicon.
+    - Favicon.io was used to generate the site's favicon.
 
 [Back to top ^](#measure-up)
 
@@ -306,7 +306,7 @@ Tool Screen (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe De
 
 * As a user, I want the website to be easy to navigate.
 
-    - The website is focused to two pages to make it easy to navigate.
+    - The website is built over two screens on one page to make it easy to navigate.
 
     - Buttons on the site stand out so the user knows where to click next.
 
@@ -320,13 +320,13 @@ Tool Screen (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe De
 
 * As a user, I want the results to be clear and easy to understand.
 
-    - Results are printed on the screen in an easy to read format with clear indication of which measurement is which.
+    - Results are printed on the screen in an easy-to-read format with a clear indication of which measurement is which.
 
-    - The history table displays all its data in a nice easy to read table.
+    - The history table displays all its data in a nice easy-to-read table.
 
 * As a user, I want the website to save a history of what I have converted.
 
-    - The site saves your previous conversions to a convienient table.
+    - The site saves your previous conversions to a convenient table.
 
 * As a user, I want to be able to access this tool on different devices.
 
@@ -348,19 +348,19 @@ Tool Screen (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe De
     ![Index.html HTML Validation Result 2](assets/readme-files/index-html-validation-result-2.png)
     ![Script.js HTML Validation Result 2](assets/readme-files/js-html-validation-result-2.png)
 
-        - After corrections validator resulted in no errors.
+        - After corrections, validator resulted in no errors.
 
     - W3C CSS Validator Result 1
     ![Syles.css CSS Validation Result 1](assets/readme-files/css-validation-result-1.png)
 
         - The validator pointed out a couple of instances I had used commas in my code where I shouldn't have. I removed them.
 
-        - I removed line 193 in the css as it was not required.
+        - I removed line 193 in the CSS as it was not required.
 
     - W3C CSS Validator Result 2
     ![Syles.css CSS Validation Result 2](assets/readme-files/css-validation-result-2.png)
 
-        - After corrections the validator resulted in no errors.
+        - After corrections, the validator resulted in no errors.
 
 * The [JSHints JavaScript Code Quality Tool](https://jshint.com/) was used to validate the JavaScript in the site.
 
@@ -374,11 +374,11 @@ Tool Screen (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe De
     - JShins Result 2
     ![JShints JavaScript Validation Result 2](assets/readme-files/jsquint-test-results-2.png)
 
-        - After corrections there were no major issues with the code.
+        - After corrections, there were no major issues with the code.
 
 ### Accessibility
 
-* Lighthouse in Chrome DevTools was used to confirm that the colours and fonts in the site were easy to read and accessible.
+* Lighthouse in Chrome DevTools was used to confirm that the colours and fonts on the site were easy to read and accessible.
 
 * Lighthouse Report
 
@@ -400,20 +400,20 @@ Tool Screen (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe De
 
 Browser | Outcome | Result
 --- | --- | ---
-Google Chrome | No appearance, responsiveness nor functionality issues. | Pass
-Safari | No appearance, responsiveness nor functionality issues. | Pass
-Mozilla Firefox | No appearance, responsiveness nor functionality issues. | Pass
-Microsoft Edge | No appearance, responsiveness nor functionality issues. | Pass
+Google Chrome | No appearance, responsiveness or functionality issues. | Pass
+Safari | No appearance, responsiveness or functionality issues. | Pass
+Mozilla Firefox | No appearance, responsiveness or functionality issues. | Pass
+Microsoft Edge | No appearance, responsiveness or functionality issues. | Pass
 
 * Device Compatibility
 
 Device | Outcome | Result
 --- | --- | ---
-MacBook Pro 13'' | No appearance, responsiveness nor functionality issues. | Pass
-Acer Aspire V | No appearance, responsiveness nor functionality issues. | Pass
-iPad Pro 10.5'' | No appearance, responsiveness nor functionality issues. | Pass
-OnePlus 10 Pro | No appearance, responsiveness nor functionality issues. | Pass
-iPhone 15 | No appearance, responsiveness nor functionality issues. | Pass
+MacBook Pro 13'' | No appearance, responsiveness or functionality issues. | Pass
+Acer Aspire V | No appearance, responsiveness or functionality issues. | Pass
+iPad Pro 10.5'' | No appearance, responsiveness or functionality issues. | Pass
+OnePlus 10 Pro | No appearance, responsiveness or functionality issues. | Pass
+iPhone 15 | No appearance, responsiveness or functionality issues. | Pass
 
 * Common Elements Testing
 
@@ -422,24 +422,24 @@ iPhone 15 | No appearance, responsiveness nor functionality issues. | Pass
     Feature | Outcome | Result
     --- | --- | ---
     Logo | Anchor tag brings the user to the welcome screen before the JavaScript alters the DOM. | Pass
-    Social Links | The icons all display properly and they highlight when hovered on with a transition of one second. When the icons are clicked they open a new tab which displays the relative social media site. | Pass
+    Social Links | The icons all display properly and they highlight when hovered on with a transition of one second. When the icons are clicked they open a new tab that displays the relative social media site. | Pass
     
     - Welcome Screen
 
     Feature | Outcome | Result
     --- | --- | ---
-    Start Button | Button's hover and click styles all run properly. When the button is clicked the JavaScript writes new HTML to the page brining the user to the tool screen.
+    Start Button | Button's hover and click styles all run properly. When the button is clicked the JavaScript writes new HTML to the page bringing the user to the tool screen.
 
     - Tool Screen
 
     Feature | Outcome | Result
     --- | --- | ---
-    Accordion Button | The accordion button starts off hiding its panel. When it is pressed the panel slides out and the symbol on the right changes from a + to a -. When clicked again the process reverts to its initial state | Pass
+    Accordion Button | The accordion button starts off by hiding its panel. When it is pressed the panel slides out and the symbol on the right changes from a + to a -. When clicked again the process reverts to its initial state | Pass
     Unit Buttons | The unit buttons clicked, hovered and active styles all run properly. Each individual button alters the submit button in the expected way and when the submit button is pressed the correct conversion, relative to the Unit button pressed, is carried out. | Pass
-    Input Box | Input Box pulls focus when each unit button is pressed and the same result with the submit button. The box borders highlight when it is selected. The box will only accept number inputs and only if they are greater than zero and less than one million. It the value violates this then an alert will display. The box deletes whatever input was last placed in it after the submit button is pressed or when a new unit button is pressed. | Pass
+    Input Box | Input Box pulls focus when each unit button is pressed and the same result with the submit button. The box borders highlight when it is selected. The box will only accept number inputs and only if they are greater than zero and less than one million. If the value violates this then an alert will be displayed. The box deletes whatever input was last placed in it after the submit button is pressed or when a new unit button is pressed. | Pass
     Submit Button | The text within the button changes depending on what unit button is currently pressed. All clicked, hover and active styles are functioning properly. When the submit button is pressed the result gets printed to the page and the result is also added to the history table. If the submit button is pressed when there is no value present in the input box an alert will display asking the user to input a value. | Pass
-    Conversion Result | The result gets printed once the submit button is pressed and the heading "Your Conversion:" displays above the result. The result is displayed in an easy to read sentence which includes your original input and unit and the result and its metric unit. | Pass
-    History Table | The table accepts additional data every time the submit button is presssed, so long as the value does not violate the conditions of the input box. The data is displayed neatly in clearly labeled collums and the rows print the most recent conversion to the top of the table pushing the rest down. | Pass
+    Conversion Result | The result gets printed once the submit button is pressed and the heading "Your Conversion:" displays above the result. The result is displayed in an easy-to-read sentence which includes your original input and unit and the result and its metric unit. | Pass
+    History Table | The table accepts additional data every time the submit button is pressed, so long as the value does not violate the conditions of the input box. The data is displayed neatly in clearly labeled columns and the rows print the most recent conversion to the top of the table pushing the rest down. | Pass
 
     [Back to top ^](#measure-up)
 
@@ -456,7 +456,7 @@ iPhone 15 | No appearance, responsiveness nor functionality issues. | Pass
 
     ## Deployment
 
-    * This website was developed using [GitPod](https://www.gitpod.io/) and was commited and pushed to GitHub using the GitPod terminal.
+    * This website was developed using [GitPod](https://www.gitpod.io/) and was committed and pushed to GitHub using the GitPod terminal.
 
     ### GitHub Pages
 
