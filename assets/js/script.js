@@ -24,16 +24,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 <h2 class="hidden-heading">The Calculator</h2>
                 <h3>Please Select Type Of Conversion</h3>
                 <div class="buttons">
-                    <button class="options button-29" data-type="cups-liquid" id="cups-liquid">
+                    <button class="options button-29" data-type="cups-liquid" id="cups-liquid" aria-label="Cups Liquid">
                     Cups Liquid
                     </button>
-                    <button class="options button-29" data-type="cups-solid" id="cups-solid">
+                    <button class="options button-29" data-type="cups-solid" id="cups-solid aria-label="Cups Solid">
                     Cups Solid
                     </button>
-                    <button class="options button-29" data-type="ounces" id="ounces">
+                    <button class="options button-29" data-type="ounces" id="ounces" aria-label="Ounces">
                     Ounces
                     </button>
-                    <button class="options button-29" data-type="fluid-ounces" id="fluid-ounces">
+                    <button class="options button-29" data-type="fluid-ounces" id="fluid-ounces" aria-label="Fluid Ounces">
                     Fluid Ounces
                     </button>
                 </div>
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <input id="user-input" type="number" min="0" aria-label="Input Imperial Value Here">
                 </div>
                 <div class="submit-area">
-                    <button class="options button-29" id="submit" data-type="submit"><span id="conversion">Please select a unit to convert</span></button>
+                    <button class="options button-29" id="submit" data-type="submit" aria-label="Submit"><span id="conversion">Please select a unit to convert</span></button>
                 </div>
           </section>
           <section id="output-div">
