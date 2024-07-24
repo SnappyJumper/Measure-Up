@@ -202,7 +202,7 @@ Tool Section (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe D
 
     - The footer contains links to social media sites displayed as icons. 
 
-    - The social media Icons highlight when the cursor is hovered over them.
+    - The social media Icons highlight with a transition delay of one second when the cursor is hovered over them.
 
     - Clicking one of the links will open the corresponding site in a separate tab. This is useful for easy navigation back to the Measure Up page.
 
@@ -222,11 +222,15 @@ Tool Section (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe D
 
     - The image is elegant and simple which complements the design of the site.
 
+    - The image moves to the left of the screen on larger screens to better use the space.
+
 * **Start Button**
 
     - The start button's purpose is to alter the page so that it displays the tool screen.
 
     - The start button is styled to stand out against the rest of the page and is inviting to press.
+
+    - The start button, along with the welcome image move to the right of the screen on larger screens to make better use of the extra space.
 
 ### Tool Screen
 
