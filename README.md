@@ -101,10 +101,10 @@ The main font used in the site is Poppins from Google Font with a back up of san
 
 [Balsamiq](https://balsamiq.com/) was the software used to generate wireframe mock-ups of the site and to demonstrate the placement of the elements within the page.
 
-Page | Desktop | Mobile
+Screen | Desktop | Mobile
 --- | --- | ---
-Welcome Page | ![Welcome Page Wireframe Desktop](assets/readme-files/balsamiq-desktop-wireframe-1.png) | ![Welcome Page Wireframe Mobile](assets/readme-files/balsamiq-mobile-wireframe-1.png)
-Tool Section (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe Desktop Tab Undepoyed](assets/readme-files/balsamiq-desktop-wireframe-2.png) ![Tool Section Wireframe Desktop Tab Deployed](assets/readme-files/balsamiq-desktop-wireframe-3.png) | ![Tool Section Wireframe Mobile Tab Undeployed](assets/readme-files/balsamiq-mobile-wireframe-3.png) ![Tool Section Wireframe Mobile Tab Deployed](assets/readme-files/balsamiq-mobile-wireframe-2.png)
+Welcome Screen | ![Welcome Page Wireframe Desktop](assets/readme-files/balsamiq-desktop-wireframe-1.png) | ![Welcome Page Wireframe Mobile](assets/readme-files/balsamiq-mobile-wireframe-1.png)
+Tool Screen (Accordion Tab Undeployed and Deployed)| ![Tool Section Wireframe Desktop Tab Undepoyed](assets/readme-files/balsamiq-desktop-wireframe-2.png) ![Tool Section Wireframe Desktop Tab Deployed](assets/readme-files/balsamiq-desktop-wireframe-3.png) | ![Tool Section Wireframe Mobile Tab Undeployed](assets/readme-files/balsamiq-mobile-wireframe-3.png) ![Tool Section Wireframe Mobile Tab Deployed](assets/readme-files/balsamiq-mobile-wireframe-2.png)
 
 [Back to top ^](#measure-up)
 
@@ -422,7 +422,7 @@ iPhone 15 | No appearance, responsiveness nor functionality issues. | Pass
     Feature | Outcome | Result
     --- | --- | ---
     Logo | Anchor tag brings the user to the welcome screen before the JavaScript alters the DOM. | Pass
-    Social Links | The icons all display properly and they highlight when hovered on. When the icons are clicked they open a new tab which displays the relative social media site. | Pass
+    Social Links | The icons all display properly and they highlight when hovered on with a transition of one second. When the icons are clicked they open a new tab which displays the relative social media site. | Pass
     
     - Welcome Screen
 
@@ -444,3 +444,68 @@ iPhone 15 | No appearance, responsiveness nor functionality issues. | Pass
     [Back to top ^](#measure-up)
 
     ## Finished Product
+
+    Screen | Image
+    --- | ---
+    Welcome Screen (Mobile Version) | ![Final Welcome Screen Mobile](assets/readme-files/final-welcome-screen-mobile.png)
+    Welcome Screen (Desktop Version) | ![Final Welcome Screen Desktop](assets/readme-files/final-welcome-screen-desktop.png)
+    Tool Screen (Mobile Version) | ![Final Tool Screen Mobile](assets/readme-files/final-tool-screen-mobile.png)
+    Tool Screen (Desktop Version) | ![Final Tool Screen Desktop](assets/readme-files/final-tool-screen-desktop.png)
+
+    [Back to top ^](#measure-up)
+
+    ## Deployment
+
+    * This website was developed using [GitPod](https://www.gitpod.io/) and was commited and pushed to GitHub using the GitPod terminal.
+
+    ### GitHub Pages
+
+    * Here are the steps to deploy this website to GitHub Pages from its GitHub repository:
+
+    1. Log into GitHub and find the repository associated with the project [GitHub Repository](https://github.com/).
+
+    2. At the top of the repository locate the settings and click.
+
+    3. Within settings locate the pages section.
+
+    4. In source, change the dropdown menu option from none to Master Branch.
+
+    5. The page should then refresh and generate a link to your site.
+
+    [Back to top ^](#measure-up)
+
+    ## Credits
+
+    ### Content
+
+    * The conversion calculations were taken from my personal notes when I go baking and have to convert from Imperial to Metric.
+
+    ### Media
+
+    * The hero image was from JJ Jordan from the website [https://www.pexels.com/](https://www.pexels.com/photo/yellow-and-red-round-fruit-on-brown-and-white-weighing-scale-9241897/)
+
+    ### Code
+
+    * [Stack Overflow](https://stackoverflow.com/) and [W3Schools](https://www.w3schools.com/) were regularly consulted for inspiration and with help understanding some of the code.
+
+    * The code for the accordion tab was an altered version of W3Schools code found [here](https://www.w3schools.com/howto/howto_js_accordion.asp)
+
+    * The code for styling the buttons was from [getcssscan](https://getcssscan.com/) and the button 29 was modified and used. It can be seen [here](https://getcssscan.com/css-buttons-examples)
+
+    * The styling code for the input box was taken and modified from [copy-paste-css](https://copy-paste-css.com/) and can be seen under the name Algolia [here](https://copy-paste-css.com/form-input-text)
+
+     [Back to top ^](#measure-up)
+
+     ## Acknowledgements
+
+     * My family for their love, support and for paying for this course, I'll pay you back I swear! 
+
+     * My partner, for her love and support throughout this course and the lend of her iPhone 15 for testing!
+
+     * My housemate, for his support and tips. Telling me to go for a walk after coding all day.
+
+     * My mentor, Marcel for his guidance and feedback throughout this project.
+
+     * Code institute, for its great tutor support, learning environment and its helpful Slack community.
+
+     [Back to top ^](#measure-up)
