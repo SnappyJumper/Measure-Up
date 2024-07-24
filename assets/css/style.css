@@ -101,6 +101,7 @@ h3 {
 /*Taken from W3Schools https://www.w3schools.com/howto/howto_js_accordion.asp*/
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
+    font-size: 1.2rem;
     background-color: #996515;
     background: rgb(74, 81, 35);
     background: linear-gradient(90deg, rgba(74, 81, 35, 1) 48%, rgba(153, 101, 21, 1) 72%);
@@ -171,6 +172,7 @@ h3 {
 
 /*The div containing the options buttons*/
 .buttons {
+    margin-top:20px;
     height: 150px;
     display: flex;
     flex-wrap: wrap;
@@ -181,6 +183,7 @@ h3 {
 /* Styling for the options buttons, start and submit button 
 from https://getcssscan.com/css-buttons-examples*/
 .button-29 {
+    margin: 10px 10px;
     width: 150px;
     align-items: center;
     appearance: none;
@@ -239,6 +242,7 @@ from https://getcssscan.com/css-buttons-examples*/
 
 /*Label for the Input Box*/
 .input-area label {
+    margin-top: 20px;
     text-align: center;
     font-family: "Maname", serif;
     font-weight: 400;
@@ -284,11 +288,12 @@ from https://getcssscan.com/css-buttons-examples*/
     padding-right: 10px;
     padding-left: 10px;
     font-size: 10px;
-    margin: 20px 20px;
+    margin: 30px 20px;
 }
 
 /*Subheading for the output*/
 #output-div h3 {
+    margin-top: 20px;
     text-align: center;
     font-size: x-large;
     padding-bottom: 10px;
@@ -306,7 +311,7 @@ from https://getcssscan.com/css-buttons-examples*/
     display: flex;
     justify-content: center;
     padding: 10px;
-
+    margin-top: 20px;
 }
 
 /*The History Table Div*/
@@ -396,7 +401,7 @@ footer {
         box-shadow: 2px 2px #4a5123, -0.5em 0 .4em #996515;
         border-radius: 10px;
         margin: 30px 20px;
-        height: 375px;
+        height: 400px;
     }
 
     /*Subheading for conversion tool*/
@@ -419,6 +424,11 @@ footer {
         margin-top: 30px;
     }
 
+    /*Submit button*/
+    #submit {
+        font-size: 1rem;
+    }
+
     /*History Table*/
     #history-table {
         margin-bottom: 100px;
@@ -429,15 +439,18 @@ footer {
 /*Media query for laptop screens and up*/
 @media screen and (min-width: 992px) {
 
+    /*div containing welcome screen*/
     #welcome {
         display: flex;
         justify-content: space-around;
     }
 
+    /*div containing hero img*/
     #img-container {
         padding: 50px 50px;
     }
 
+    /*Div containing the welcome message and the start button*/
     #message-and-start {
         display: flex;
         align-items: center;
@@ -445,40 +458,48 @@ footer {
         justify-content: center;
     }
 
+    /*Div containing the welcome message*/
     #welcome-page {
         max-width: 450px;
     }
 
+    /*The p element containing the welcome text*/
     #welcome-page p {
         font-size: 1.2rem;
     }
 
+    /*Div contianing the start button*/
     #start-container {
         margin-bottom: 0;
         margin-top: 40px;
     }
 
+    /*Accordion tab*/
     .accordion {
         font-size: 1rem;
     }
 
+    /*Pelement containing the panel message*/
     .panel p {
         font-size: 1rem;
     }
 
+    /*Div that contains most of the elements of the tool page to help centre the content*/
     #justify {
         display: flex;
         align-items: center;
         flex-direction: column;
     }
 
+    /*Div containing the face of the tool*/
     #calculator {
         margin-top: 30px;
         max-width: 800px;
     }
 
+    /*Unit, start and submit buttons*/
     .button-29 {
-        margin: 0 20px;
+        margin: 20px 20px;
     }
 
     /*Input Box*/
@@ -486,10 +507,12 @@ footer {
         margin: 0px 100px;
     }
 
+    /*span containing the result of users conversion*/
     #conversion {
         font-size: 1rem;
     }
 
+    /*Div containing all elements of the history table*/
     #history {
         width: 100%;
     }

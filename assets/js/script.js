@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         </section>
         <div id="justify">
-        <section id="calculator">
+          <section id="calculator">
                 <h2 class="hidden-heading">The Calculator</h2>
                 <h3>Please Select Type Of Conversion</h3>
                 <div class="buttons">
@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="submit-area">
                     <button class="options button-29" id="submit" data-type="submit"><span id="conversion">Please select a unit to convert</span></button>
                 </div>
-        </section>
-        <section id="output-div">
+          </section>
+          <section id="output-div">
                     <h2 class="hidden-heading">Output</h2>
 
                     <p><span id="output"></span></p>
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         </tr>
                     </table>
                 </div>
-            </section>
+          </section>
             </div>`;
         //the info accordion    
         // fetches the element by its class name accordion and assigns it to acc
