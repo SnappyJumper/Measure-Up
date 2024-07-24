@@ -462,15 +462,15 @@ iPhone 15 | No appearance, responsiveness or functionality issues. | Pass
 
     * Here are the steps to deploy this website to GitHub Pages from its GitHub repository:
 
-    1. Log into GitHub and find the repository associated with the project [GitHub Repository](https://github.com/).
+        1. Log into GitHub and find the repository associated with the project [GitHub Repository](https://github.com/).
 
-    2. At the top of the repository locate the settings and click.
+        2. At the top of the repository locate the settings and click.
 
-    3. Within settings locate the pages section.
+        3. Within settings locate the pages section.
 
-    4. In source, change the dropdown menu option from none to Master Branch.
+        4. In source, change the dropdown menu option from none to Master Branch.
 
-    5. The page should then refresh and generate a link to your site.
+        5. The page should then refresh and generate a link to your site.
 
     [Back to top ^](#measure-up)
 
