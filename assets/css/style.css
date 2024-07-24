@@ -293,7 +293,7 @@ from https://getcssscan.com/css-buttons-examples*/
 
 /*Subheading for the output*/
 #output-div h3 {
-    margin-top: 20px;
+    margin-top: 30px;
     text-align: center;
     font-size: x-large;
     padding-bottom: 10px;
@@ -324,7 +324,7 @@ from https://getcssscan.com/css-buttons-examples*/
     width: 100%;
     border: 1px solid #000000;
     border-radius: 5px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 /*Table Heading*/
@@ -343,7 +343,6 @@ footer {
     background-color: #4a5123;
     background: rgb(74, 81, 35);
     background: linear-gradient(90deg, rgba(74, 81, 35, 1) 48%, rgba(153, 101, 21, 1) 72%);
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
