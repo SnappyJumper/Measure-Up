@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <button class="options button-29" data-type="cups-liquid" id="cups-liquid" aria-label="Cups Liquid">
                     Cups Liquid
                     </button>
-                    <button class="options button-29" data-type="cups-solid" id="cups-solid aria-label="Cups Solid">
+                    <button class="options button-29" data-type="cups-solid" id="cups-solid" aria-label="Cups Solid">
                     Cups Solid
                     </button>
                     <button class="options button-29" data-type="ounces" id="ounces" aria-label="Ounces">
